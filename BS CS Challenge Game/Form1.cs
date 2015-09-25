@@ -19,11 +19,17 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Image image = Image.FromFile("C:\\Users\\Adonias\\Documents\\Visual Studio 2013\\Projects\\BS CS Challenge Game\\CECS-343-project\\BS CS Challenge Game\\CSULBMap3.png");
-            PictureBox pictureBox1 = new PictureBox();
-            pictureBox1.Image = image;
-            pictureBox1.Height = image.Height;
-            pictureBox1.Width = image.Width;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = "C:\\Users\\Adonias\\Documents\\Visual Studio 2013\\Projects\\BS CS Challenge Game\\CECS-343-project\\BS CS Challenge Game";
+            openFileDialog.RestoreDirectory = true;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                PictureBox pictureBox1 = new PictureBox();
+                pictureBox1.Image = new Bitmap()
+                pictureBox1.Height = image.Height;
+                pictureBox1.Width = image.Width;
+            }
+            
             
             
         }
