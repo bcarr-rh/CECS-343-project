@@ -19,14 +19,35 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Image image = Image.FromFile("C:\\Users\\Adonias\\Documents\\Visual Studio 2013\\Projects\\BS CS Challenge Game\\CECS-343-project\\BS CS Challenge Game\\CSULBMap3.png");
-            PictureBox pictureBox1 = new PictureBox();
-            pictureBox1.Image = image;
-            pictureBox1.Height = image.Height;
-            pictureBox1.Width = image.Width;
-            
-            
-        }
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.Filter = "All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    PictureBox PictureBox1 = new PictureBox();
+                    PictureBox1.Image = new Bitmap(openFileDialog1.FileName);
+                    // Add the new control to its parent's controls collection
+                    PictureBox1.Height = 2000;
+                    PictureBox1.Width = 1670;
+                    this.AutoScroll = true;
+
+                    this.Controls.Add(PictureBox1);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading image" + ex.Message);
+                }
+            }
+        
+
+
+    }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
