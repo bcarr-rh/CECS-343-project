@@ -19,6 +19,7 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (Screen.PrimaryScreen.Bounds.Width > 1670)
                 this.Width = 1670;
             else
@@ -27,6 +28,41 @@ namespace BS_CS_Challenge_Game
                 this.Height = 2000;
             else
                 this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
+=======
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.Filter = "All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    PictureBox PictureBox1 = new PictureBox();
+                    PictureBox1.Image = new Bitmap(openFileDialog1.FileName);
+                    // Add the new control to its parent's controls collection
+                    PictureBox1.Height = 2000;
+                    PictureBox1.Width = 1670;
+                    if (Screen.PrimaryScreen.Bounds.Width > 1670)
+                        this.Width = 1670;
+                    else
+                        this.Width = Screen.PrimaryScreen.Bounds.Width;
+                    if (Screen.PrimaryScreen.Bounds.Height > 2100)
+                        this.Height = 2000;
+                    else
+                        this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
+                    this.AutoScroll = true;
+                    this.Controls.Add(PictureBox1);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading image" + ex.Message);
+                }
+            }
+        
+>>>>>>> origin/master
 
         }
 

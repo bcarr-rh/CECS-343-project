@@ -656,6 +656,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1654, 1053);
             this.Controls.Add(this.button58);
             this.Controls.Add(this.button59);
@@ -720,11 +721,15 @@
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+=======
+            this.ClientSize = new System.Drawing.Size(0, 0);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+>>>>>>> origin/master
             this.KeyPreview = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "BS CS Challenge Game";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
