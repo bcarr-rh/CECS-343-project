@@ -19,7 +19,6 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             if (Screen.PrimaryScreen.Bounds.Width > 1670)
                 this.Width = 1670;
             else
@@ -28,7 +27,7 @@ namespace BS_CS_Challenge_Game
                 this.Height = 2000;
             else
                 this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
-=======
+
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             openFileDialog1.InitialDirectory = "c:\\";
@@ -62,7 +61,7 @@ namespace BS_CS_Challenge_Game
                 }
             }
         
->>>>>>> origin/master
+
 
         }
 
