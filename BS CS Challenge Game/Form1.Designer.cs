@@ -154,7 +154,6 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 41);
             this.button5.TabIndex = 7;
-            this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Visible = false;
             // 
@@ -164,7 +163,6 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 41);
             this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Visible = false;
             // 

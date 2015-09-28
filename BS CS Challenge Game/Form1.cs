@@ -62,6 +62,9 @@ namespace BS_CS_Challenge_Game
             GAField.addNextTo(Pyramid);
             GAField.addNextTo(RecCenter);
             GAField.addNextTo(WestWalk);
+            JapGarden.addNextTo(GAField);
+            JapGarden.addNextTo(Pyramid);
+            JapGarden.addNextTo(StudentParking);
         }
 
         private void Form1_Load(object sender, EventArgs e)
