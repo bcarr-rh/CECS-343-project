@@ -83,8 +83,6 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            //Image image = Image.FromFile("C:\\Users\\Adonias\\Documents\\Visual Studio 2013\\Projects\\BS CS Challenge Game\\CECS-343-project\\BS CS Challenge Game\\CSULBMap3.png");
-            //e.Graphics.DrawImage(image, 0, 0);
         }
 
         private void room()

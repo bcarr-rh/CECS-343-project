@@ -100,7 +100,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, -82);
             this.pictureBox1.MaximumSize = new System.Drawing.Size(1670, 2000);
             this.pictureBox1.MinimumSize = new System.Drawing.Size(1670, 2000);
             this.pictureBox1.Name = "pictureBox1";
@@ -746,7 +746,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1710, 903);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.button61);
             this.Controls.Add(this.button62);
             this.Controls.Add(this.button63);
@@ -886,7 +886,6 @@
         private System.Windows.Forms.Button button58;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button60;
-        private System.Windows.Forms.Button[] buttonArray;
         private System.Windows.Forms.Button button61;
         private System.Windows.Forms.Button button62;
         private System.Windows.Forms.Button button63;
