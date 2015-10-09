@@ -37,6 +37,49 @@ namespace BS_CS_Challenge_Game
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (Screen.PrimaryScreen.Bounds.Width > 1670)
+                this.Width = 1670;
+            else
+                this.Width = Screen.PrimaryScreen.Bounds.Width;
+            if (Screen.PrimaryScreen.Bounds.Height > 2100)
+                this.Height = 2000;
+            else
+                this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
+
+            
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void room()
+        {
+
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
             GAField = new Room("George Allen Field", button1, button2, button3);
             JapGarden = new Room("Japanese Garden", button6, button5, button4);
             StudentParking = new Room("Student Parking", button9, button8, button7);
@@ -65,27 +108,35 @@ namespace BS_CS_Challenge_Game
             JapGarden.addNextTo(GAField);
             JapGarden.addNextTo(Pyramid);
             JapGarden.addNextTo(StudentParking);
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            if (Screen.PrimaryScreen.Bounds.Width > 1670)
-                this.Width = 1670;
-            else
-                this.Width = Screen.PrimaryScreen.Bounds.Width;
-            if (Screen.PrimaryScreen.Bounds.Height > 2100)
-                this.Height = 2000;
-            else
-                this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
 
-            
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void splitContainer1_Panel2_Paint_1(object sender, PaintEventArgs e)
         {
+
         }
 
-        private void room()
+        private void splitContainer1_Panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DrawCard_Click(object sender, EventArgs e)
         {
 
         }
