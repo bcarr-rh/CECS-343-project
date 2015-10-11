@@ -15,39 +15,54 @@ namespace BS_CS_Challenge_Game
         private Button button1;
         private Button button2;
         private Button button3;
-        private LinkedList<Room> nextTo;
+        private LinkedList<int> nextTo;
         public Room(String n, Button b1, Button b2, Button b3)
         {
             name = n;
             button1 = b1;
             button2 = b2;
             button3 = b3;
-            nextTo = new LinkedList<Room>();
+            nextTo = new LinkedList<int>();
+        }
+        public String getRoomName()
+        {
+            return name;
         }
 
-        public void addNextTo(Room r)
+        public void addNextTo(int  r)
         {
             nextTo.AddLast(r);
         }
-        public LinkedList<Room> getNextTo()
+        public LinkedList<int> getNextTo()
         {
             return nextTo;
         }
-        public void MoveTo(int player)
+        public void MoveTo(String playerName)
         {
-            Image playerImage;
-            if (player == 0)
-                playerImage = null;
-            else if (player == 1)
-                playerImage = null;
-            else
-                playerImage = null;
             if (button1.Visible.Equals(false))
-                button1.BackgroundImage = playerImage;
+            {
+                button1.Name = playerName;
+                button1.Visible = true;
+            }
             else if (button2.Visible.Equals(false))
-                button1.BackgroundImage = playerImage;
-            if (button1.Visible.Equals(false))
-                button1.BackgroundImage = playerImage;
+            {
+                button1.Name = playerName;
+                button1.Visible = true;
+            }
+            else if (button3.Visible.Equals(false))
+            {
+                button3.Name = playerName;
+                button3.Visible = true;
+            }
+        }
+        public void MoveOut(String playerName)
+        {
+            if (button1.Name.Equals(playerName))
+                button1.Visible = false;
+            else if (button2.Name.Equals(playerName))
+                button1.Visible = false;
+            else if (button3.Name.Equals(playerName))
+                button1.Visible = false;
         }
     }
 }
