@@ -52,8 +52,8 @@ namespace BS_CS_Challenge_Game
             }
             else if (button2.Visible.Equals(false))
             {
-                button1.Text = playerName;
-                button1.Visible = true;
+                button2.Text = playerName;
+                button2.Visible = true;
             }
             else if (button3.Visible.Equals(false))
             {
@@ -63,12 +63,12 @@ namespace BS_CS_Challenge_Game
         }
         public void MoveOut(String playerName)
         {
-            if (button1.Name.Equals(playerName))
+            if (button1.Text.Equals(playerName))
                 button1.Visible = false;
-            else if (button2.Name.Equals(playerName))
-                button1.Visible = false;
-            else if (button3.Name.Equals(playerName))
-                button1.Visible = false;
+            else if (button2.Text.Equals(playerName))
+                button2.Visible = false;
+            else if (button3.Text.Equals(playerName))
+                button3.Visible = false;
         }
     }
 }

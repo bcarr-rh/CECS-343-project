@@ -26,14 +26,16 @@ namespace BS_CS_Challenge_Game
         {
             roomArray = new Room[21];
             playerArray = new Player[3];
+            /**
             if (Screen.PrimaryScreen.Bounds.Width > 1670)
                 this.Width = 1670;
             else
                 this.Width = Screen.PrimaryScreen.Bounds.Width;
             if (Screen.PrimaryScreen.Bounds.Height > 2100)
                 this.Height = 2000;
-            else
+            else 
                 this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
+             **/
             this.splitContainer1.Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 3;
             this.splitContainer1.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 3;
             playerArray[0] = new Player("John", 2);
@@ -88,43 +90,26 @@ namespace BS_CS_Challenge_Game
             roomArray[3].addNextTo(5);
             roomArray[4].addNextTo(0);
             roomArray[4].addNextTo(5);
-            roomArray[4].addNextTo(11);
             roomArray[4].addNextTo(12);
-            roomArray[4].addNextTo(13);
             roomArray[4].addNextTo(7);
             roomArray[5].addNextTo(0);
             roomArray[5].addNextTo(3);
             roomArray[5].addNextTo(2);
             roomArray[5].addNextTo(6);
-            roomArray[5].addNextTo(11);
-            roomArray[5].addNextTo(14);
             roomArray[5].addNextTo(4);
             roomArray[6].addNextTo(2);
             roomArray[6].addNextTo(5);
-            roomArray[6].addNextTo(14);
-            roomArray[6].addNextTo(18);
-            roomArray[6].addNextTo(19);
             roomArray[6].addNextTo(10);
             roomArray[7].addNextTo(4);
-            roomArray[7].addNextTo(13);
             roomArray[7].addNextTo(8);
             roomArray[8].addNextTo(7);
-            roomArray[8].addNextTo(13);
             roomArray[8].addNextTo(16);
-            roomArray[8].addNextTo(17);
             roomArray[8].addNextTo(9);
             roomArray[9].addNextTo(8);
-            roomArray[9].addNextTo(17);
-            roomArray[9].addNextTo(20);
             roomArray[9].addNextTo(10);
             roomArray[10].addNextTo(6);
             roomArray[10].addNextTo(9);
-            roomArray[10].addNextTo(20);
             roomArray[10].addNextTo(15);
-            roomArray[10].addNextTo(19);
-            roomArray[11].addNextTo(4);
-            roomArray[11].addNextTo(5);
-            roomArray[11].addNextTo(14);
             roomArray[11].addNextTo(12);
             roomArray[12].addNextTo(4);
             roomArray[12].addNextTo(11);
@@ -132,17 +117,8 @@ namespace BS_CS_Challenge_Game
             roomArray[12].addNextTo(15);
             roomArray[12].addNextTo(16);
             roomArray[12].addNextTo(13);
-            roomArray[13].addNextTo(12);
-            roomArray[13].addNextTo(16);
-            roomArray[13].addNextTo(4);
-            roomArray[13].addNextTo(7);
-            roomArray[13].addNextTo(8);
-            roomArray[14].addNextTo(5);
-            roomArray[14].addNextTo(6);
-            roomArray[14].addNextTo(18);
             roomArray[14].addNextTo(15);
             roomArray[14].addNextTo(12);
-            roomArray[14].addNextTo(11);
             roomArray[15].addNextTo(12);
             roomArray[15].addNextTo(14);
             roomArray[15].addNextTo(18);
@@ -151,32 +127,20 @@ namespace BS_CS_Challenge_Game
             roomArray[15].addNextTo(20);
             roomArray[15].addNextTo(17);
             roomArray[16].addNextTo(12);
-            roomArray[16].addNextTo(13);
-            roomArray[16].addNextTo(17);
             roomArray[16].addNextTo(8);
             roomArray[17].addNextTo(15);
-            roomArray[17].addNextTo(16);
-            roomArray[17].addNextTo(20);
-            roomArray[17].addNextTo(9);
-            roomArray[17].addNextTo(8);
-            roomArray[18].addNextTo(6);
-            roomArray[18].addNextTo(19);
-            roomArray[18].addNextTo(14);
             roomArray[18].addNextTo(15);
-            roomArray[19].addNextTo(6);
-            roomArray[19].addNextTo(18);
             roomArray[19].addNextTo(15);
-            roomArray[19].addNextTo(10);
-            roomArray[20].addNextTo(17);
             roomArray[20].addNextTo(15);
-            roomArray[20].addNextTo(10);
-            roomArray[20].addNextTo(9);
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
                 roomsList.Items.Add(roomArray[s].getRoomName());
             }
             roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
+            roomArray[playerArray[1].getCurrentRoom()].MoveTo(playerArray[1].getPlayerName());
+            roomArray[playerArray[2].getCurrentRoom()].MoveTo(playerArray[2].getPlayerName());
+            PlayerIndicator.Text = "Human player is " + playerArray[0].getPlayerName();
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -256,13 +220,17 @@ namespace BS_CS_Challenge_Game
             //AI LOGIC
             Random rnd = new Random();
             //AI One
-            //int ai1 = roomArray[playerArray[1].getCurrentRoom()].getNextTo().Find(rnd.Next(roomArray[playerArray[1].getCurrentRoom()].getNextTo().Count()-1)).Value;
-           // playerArray[1].setCurrentRoom(roomArray[ai1].getRoomNum());
-            //roomArray[ai1].MoveTo(playerArray[1].getPlayerName());
+            roomArray[playerArray[1].getCurrentRoom()].MoveOut(playerArray[1].getPlayerName());
+            int ai1RndSize = roomArray[playerArray[1].getCurrentRoom()].getNextTo().Count() - 1;
+            int ai1 = roomArray[playerArray[1].getCurrentRoom()].getNextTo().First();
+            playerArray[1].setCurrentRoom(roomArray[ai1].getRoomNum());
+            roomArray[ai1].MoveTo(playerArray[1].getPlayerName());
             //AI two
-           // int ai2 = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Find(rnd.Next(roomArray[playerArray[2].getCurrentRoom()].getNextTo().Count()-1)).Value;
-            //playerArray[2].setCurrentRoom(roomArray[ai2].getRoomNum());
-            //roomArray[ai2].MoveTo(playerArray[2].getPlayerName());
+            roomArray[playerArray[2].getCurrentRoom()].MoveOut(playerArray[2].getPlayerName());
+            int ai2RndSize = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Count() - 1;
+            int ai2 = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Last();
+            playerArray[2].setCurrentRoom(roomArray[ai2].getRoomNum());
+            roomArray[ai2].MoveTo(playerArray[2].getPlayerName());
             //reset roomsList
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
@@ -276,6 +244,34 @@ namespace BS_CS_Challenge_Game
 
         }
 
+        private void button41_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
