@@ -66,7 +66,6 @@ namespace BS_CS_Challenge_Game
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
-            
             roomArray[0] = new Room("George Allen Field", button1, button2, button3);
             roomArray[1] = new Room("Japanese Garden", button6, button5, button4);
             roomArray[2] = new Room("Student Parking", button9, button8, button7);
@@ -200,7 +199,7 @@ namespace BS_CS_Challenge_Game
 
         private void splitContainer1_Panel2_Paint_1(object sender, PaintEventArgs e)
         {
-
+         
         }
 
         private void splitContainer1_Panel1_Paint_1(object sender, PaintEventArgs e)
@@ -225,8 +224,13 @@ namespace BS_CS_Challenge_Game
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
-            String Room = roomsList.SelectedItem.ToString();
+            //String Room = roomsList.SelectedItem.ToString();
            // playerArray[0];
+        }
+
+        private void roomsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
