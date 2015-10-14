@@ -228,5 +228,10 @@ namespace BS_CS_Challenge_Game
             String Room = roomsList.SelectedItem.ToString();
            // playerArray[0];
         }
+
+        private void roomsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

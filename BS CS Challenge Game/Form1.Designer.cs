@@ -891,6 +891,7 @@
             this.roomsList.Name = "roomsList";
             this.roomsList.Size = new System.Drawing.Size(138, 95);
             this.roomsList.TabIndex = 5;
+            this.roomsList.SelectedIndexChanged += new System.EventHandler(this.roomsList_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
