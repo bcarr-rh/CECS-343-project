@@ -12,17 +12,23 @@ namespace BS_CS_Challenge_Game
     class Room
     {
         private String name;
+        private int roomNum;
         private Button button1;
         private Button button2;
         private Button button3;
         private LinkedList<int> nextTo;
-        public Room(String n, Button b1, Button b2, Button b3)
+        public Room(String n, int r, Button b1, Button b2, Button b3)
         {
             name = n;
+            roomNum = r;
             button1 = b1;
             button2 = b2;
             button3 = b3;
             nextTo = new LinkedList<int>();
+        }
+        public int getRoomNum()
+        {
+            return roomNum;
         }
         public String getRoomName()
         {
@@ -41,17 +47,17 @@ namespace BS_CS_Challenge_Game
         {
             if (button1.Visible.Equals(false))
             {
-                button1.Name = playerName;
+                button1.Text = playerName;
                 button1.Visible = true;
             }
             else if (button2.Visible.Equals(false))
             {
-                button1.Name = playerName;
+                button1.Text = playerName;
                 button1.Visible = true;
             }
             else if (button3.Visible.Equals(false))
             {
-                button3.Name = playerName;
+                button3.Text = playerName;
                 button3.Visible = true;
             }
         }

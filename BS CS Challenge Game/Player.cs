@@ -10,10 +10,10 @@ namespace BS_CS_Challenge_Game
     {
         String playerName;
         int currentRoom;
-        public Player(String name)
+        public Player(String name, int room)
         {
             playerName = name;
-            currentRoom = -1;
+            currentRoom = room;
         }
         public void setCurrentRoom(int room)
         {
