@@ -893,9 +893,6 @@
             // roomsList
             // 
             this.roomsList.FormattingEnabled = true;
-            this.roomsList.Items.AddRange(new object[] {
-            "ECS 308",
-            "Room of Retirement"});
             this.roomsList.Location = new System.Drawing.Point(9, 103);
             this.roomsList.Name = "roomsList";
             this.roomsList.Size = new System.Drawing.Size(138, 95);
