@@ -917,6 +917,7 @@
             this.PlayCardButton.TabIndex = 2;
             this.PlayCardButton.Text = "Play Card";
             this.PlayCardButton.UseVisualStyleBackColor = true;
+            this.PlayCardButton.Click += new System.EventHandler(this.PlayCardButton_Click);
             // 
             // MoveButton
             // 

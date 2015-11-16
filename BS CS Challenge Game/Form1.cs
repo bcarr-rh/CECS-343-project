@@ -28,6 +28,8 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            deck =  new List<CardInterface>();
+            discardDeck =  new List<CardInterface>();
             roomArray = new Room[21];
             playerArray = new Player[3];
             /**
@@ -185,6 +187,7 @@ namespace BS_CS_Challenge_Game
             showCard = deck[deck.Count - 1];
             deck.RemoveAt(deck.Count - 1);
             pictureBox2.Image = (System.Drawing.Image) Properties.Resources.ResourceManager.GetObject(showCard.getImage());
+            updatePointsDisplay();
 
         }
 
@@ -368,7 +371,29 @@ namespace BS_CS_Challenge_Game
         //show next card
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            showCard = playerArray[0].getCard(showCard);
+            pictureBox2.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject(showCard.getImage());
+        }
 
+        private void PlayCardButton_Click(object sender, EventArgs e)
+        {
+            updatePointsDisplay();
+            MoveButton.Enabled = true;
+            PlayCardButton.Enabled = false;
+            DrawCard.Enabled = true;
+            PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
+
+        }
+        private void updatePointsDisplay()
+        {
+            string[] lines = new string[6];
+            lines[0] = playerArray[0].getPlayerName() + " Learning: " + playerArray[0].getLChip() + " Craft: " + playerArray[0].getCChip() + " Integrity: " + playerArray[0].getIChip() + " Quality: " + playerArray[0].getQPoint();
+            lines[1] = playerArray[1].getPlayerName() + " Learning: " + playerArray[1].getLChip() + " Craft: " + playerArray[1].getCChip() + " Integrity: " + playerArray[1].getIChip() + " Quality: " + playerArray[1].getQPoint();
+            lines[2] = playerArray[2].getPlayerName() + " Learning: " + playerArray[2].getLChip() + " Craft: " + playerArray[2].getCChip() + " Integrity: " + playerArray[2].getIChip() + " Quality: " + playerArray[2].getQPoint();
+            lines[3] = "Cards in Deck: " + deck.Count;
+            lines[4] = "Discards out of play: " + discardDeck.Count;
+            lines[5] = playerArray[0].getPlayerName() + " " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
+            PointsDisplay.Lines = lines;
         }
     }
 }

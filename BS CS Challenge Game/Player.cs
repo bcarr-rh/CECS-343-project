@@ -26,7 +26,14 @@ namespace BS_CS_Challenge_Game
             qPoint = 0;
 
         }
+        public CardInterface getCard(CardInterface c)
+        {
+            hand.AddLast(c);
+            CardInterface temp = hand.First();
+            hand.RemoveFirst();
+            return temp;
 
+        }
         public void addCard(CardInterface c)
         {
             hand.AddFirst(c);
