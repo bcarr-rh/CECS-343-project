@@ -9,12 +9,85 @@ namespace BS_CS_Challenge_Game
     class Player
     {
         String playerName;
+        LinkedList<CardInterface> hand;
         int currentRoom;
+        int lChip;
+        int cChip;
+        int iChip;
+        int qPoint;
         public Player(String name, int room)
         {
             playerName = name;
             currentRoom = room;
+            lChip = 0;
+            cChip = 0;
+            iChip = 0;
+            qPoint = 0;
+
         }
+
+        public void addCard(CardInterface c)
+        {
+            hand.AddFirst(c);
+        }
+
+        public int handSize()
+        {
+            return hand.Count;
+        }
+        //TODO DRAW CARD
+        public void addExtraCard()
+        {
+            //hand.AddFirst(null);
+        }
+        //TODO pick card to discard?
+        public CardInterface discardPick()
+        {
+            return null;
+        }
+
+        public CardInterface discard()
+        {
+            CardInterface c = hand.Last();
+            hand.RemoveLast();
+            return c;
+        }
+
+
+        public int getLChip()
+        {
+            return lChip;
+        }
+        public int getCChip()
+        {
+            return cChip;
+        }
+        public int getIChip()
+        {
+            return iChip;
+        }
+        public int getQPoint()
+        {
+            return qPoint;
+        }
+
+        public void addLChip(int x)
+        {
+            lChip += x;
+        }
+        public void addCChip(int x)
+        {
+            cChip += x;
+        }
+        public void addIChip(int x)
+        {
+            iChip += x;
+        }
+        public void addQPoint(int x)
+        {
+            qPoint += x;
+        }
+
         public void setCurrentRoom(int room)
         {
             currentRoom = room;
