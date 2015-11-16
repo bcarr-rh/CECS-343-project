@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSULBMap3.png" />
+    <None Include="Resources\The Outpost.JPG" />
     <None Include="Resources\The Big Game.JPG" />
     <None Include="Resources\Student Parking.JPG" />
     <None Include="Resources\Soccer Goalie.JPG" />
@@ -161,7 +162,6 @@
     <None Include="Resources\CECS 100.JPG" />
     <None Include="Resources\Buddy Up.JPG" />
     <None Include="Resources\A New Laptop.JPG" />
-    <None Include="Resources\The Outpost.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

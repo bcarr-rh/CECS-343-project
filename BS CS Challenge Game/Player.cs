@@ -8,6 +8,7 @@ namespace BS_CS_Challenge_Game
 {
     class Player
     {
+        static int cardCounter;
         String playerName;
         LinkedList<CardInterface> hand;
         int currentRoom;
@@ -33,7 +34,7 @@ namespace BS_CS_Challenge_Game
 
         public int handSize()
         {
-            return hand.Count;
+            return hand.Count + 1;
         }
         //TODO DRAW CARD
         public void addExtraCard()

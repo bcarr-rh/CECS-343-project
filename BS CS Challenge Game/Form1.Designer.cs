@@ -802,7 +802,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Location = new System.Drawing.Point(620, 48);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 22);
+            this.button4.Size = new System.Drawing.Size(392, 1575);
             this.button4.TabIndex = 4;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -907,6 +907,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(173, 190);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // PlayCardButton
             // 

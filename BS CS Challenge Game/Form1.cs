@@ -15,6 +15,10 @@ namespace BS_CS_Challenge_Game
         
         private Room[] roomArray;
         private Player[] playerArray;
+        private List<CardInterface> deck;
+        private List<CardInterface> discardDeck;
+        private int moveCount;
+        private CardInterface showCard;
 
         public Form1()
         {
@@ -131,6 +135,56 @@ namespace BS_CS_Challenge_Game
             roomArray[18].addNextTo(15);
             roomArray[19].addNextTo(15);
             roomArray[20].addNextTo(15);
+            deck.Add(new EnjoyingNature());
+            deck.Add(new EnjoyingThePeace());
+            deck.Add(new ANewLaptop());
+            deck.Add(new BuddyUp());
+            deck.Add(new CECS100());
+            deck.Add(new CECS105());
+            deck.Add(new CECS174());
+            deck.Add(new CHEM111());
+            deck.Add(new ChoosingaMajor());
+            deck.Add(new ElectiveClass());
+            deck.Add(new ExcercisingMindandBody());
+            deck.Add(new FallinthePond());
+            deck.Add(new FindingtheLab());
+            deck.Add(new GoodbyeProfessor());
+            deck.Add(new LateforClass());
+            deck.Add(new LearningLinux());
+            deck.Add(new LearningNetbeans());
+            deck.Add(new LearningtheRulesofSoccer());
+            deck.Add(new LoudBuzzing());
+            deck.Add(new LunchatBratwurstHall());
+            deck.Add(new MakeaFriend());
+            deck.Add(new MaketheDeansList());
+            deck.Add(new Math122());
+            deck.Add(new Math123());
+            deck.Add(new MeettheDean());
+            deck.Add(new OralCommunication());
+            deck.Add(new ParkingViolation());
+            deck.Add(new PassSoccerClass());
+            deck.Add(new Physics151());
+            deck.Add(new PresstheRightFloor());
+            deck.Add(new ProfessorEnglert());
+            deck.Add(new ProfessorHoffman());
+            deck.Add(new ProgramCrashes());
+            deck.Add(new ResearchCompilers());
+            deck.Add(new ScoreaGoal());
+            deck.Add(new SoccerGoalie());
+            deck.Add(new StudentParking());
+            deck.Add(new TheBigGame());
+            deck.Add(new TheOutpost());
+            Shuffle();
+            PlayCardButton.Enabled = false;
+            moveCount = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                playerArray[0].addCard(deck[deck.Count - 1]);
+                deck.RemoveAt(deck.Count - 1);
+            }
+            showCard = deck[deck.Count - 1];
+            deck.RemoveAt(deck.Count - 1);
+            pictureBox2.Image = (System.Drawing.Image) Properties.Resources.ResourceManager.GetObject(showCard.getImage());
 
         }
 
@@ -197,14 +251,30 @@ namespace BS_CS_Challenge_Game
         {
 
         }
-
+        // DRAW CARD BUTTON
         private void DrawCard_Click(object sender, EventArgs e)
         {
+            DrawCard.Enabled = false;
+            if (deck.Count == 0)
+            {
+                for (int i = 0; discardDeck.Count != 0;i++)
+                {
+                    deck[i] = discardDeck[discardDeck.Count - 1];
+                    discardDeck.RemoveAt(discardDeck.Count - 1);
+                }
+                Shuffle();
+            }
+            CardInterface temp = deck[deck.Count - 1];
+            playerArray[0].addCard(temp);
+            deck.RemoveAt(deck.Count - 1);
+            PlayCardButton.Enabled = true;
+            
 
         }
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
+            moveCount++;
             String Room = roomsList.SelectedItem.ToString();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
@@ -236,6 +306,10 @@ namespace BS_CS_Challenge_Game
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
                 roomsList.Items.Add(roomArray[s].getRoomName());
+            }
+            if (moveCount == 3)
+            {
+                MoveButton.Enabled = false;
             }
         }
 
@@ -278,5 +352,23 @@ namespace BS_CS_Challenge_Game
 
         }
 
+        public  void Shuffle()
+        {
+            Random rng = new Random();
+            int n = deck.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                CardInterface value = deck[k];
+                deck[k] = deck[n];
+                deck[n] = value;
+            }
+        }
+        //show next card
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
