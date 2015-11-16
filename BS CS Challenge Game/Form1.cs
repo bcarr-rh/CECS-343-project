@@ -287,18 +287,30 @@ namespace BS_CS_Challenge_Game
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             moveCount++;
             String Room = roomsList.SelectedItem.ToString();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
                 if (roomArray[s].getRoomName().Equals(Room))
+=======
+            try {
+                String Room = roomsList.SelectedItem.ToString();
+                foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
+>>>>>>> refs/remotes/origin/AdoniasBranch
                 {
-                    roomArray[playerArray[0].getCurrentRoom()].MoveOut(playerArray[0].getPlayerName());
-                    playerArray[0].setCurrentRoom(roomArray[s].getRoomNum());
-                    roomArray[s].MoveTo(playerArray[0].getPlayerName());
-                    break;
-                }
+                    if (roomArray[s].getRoomName().Equals(Room))
+                    {
+                        roomArray[playerArray[0].getCurrentRoom()].MoveOut(playerArray[0].getPlayerName());
+                        playerArray[0].setCurrentRoom(roomArray[s].getRoomNum());
+                        roomArray[s].MoveTo(playerArray[0].getPlayerName());
+                        break;
+                    }
 
+                }
+            }
+            catch(NullReferenceException) {
+                MessageBox.Show("Select a room to move to");
             }
             //AI LOGIC
             Random rnd = new Random();
@@ -320,16 +332,20 @@ namespace BS_CS_Challenge_Game
             {
                 roomsList.Items.Add(roomArray[s].getRoomName());
             }
+<<<<<<< HEAD
             if (moveCount == 3)
             {
                 MoveButton.Enabled = false;
             }
             updatePointsDisplay();
+=======
+            MoveButton.Enabled = false;
+>>>>>>> refs/remotes/origin/AdoniasBranch
         }
 
         private void roomsList_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            MoveButton.Enabled = true;
         }
 
         private void button41_Click(object sender, EventArgs e)
@@ -406,6 +422,11 @@ namespace BS_CS_Challenge_Game
             lines[4] = "Discards out of play: " + discardDeck.Count;
             lines[5] = playerArray[0].getPlayerName() + " " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
             PointsDisplay.Lines = lines;
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
