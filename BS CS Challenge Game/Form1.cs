@@ -186,8 +186,18 @@ namespace BS_CS_Challenge_Game
             }
             showCard = deck[deck.Count - 1];
             deck.RemoveAt(deck.Count - 1);
-            pictureBox2.Image = (System.Drawing.Image) Properties.Resources.ResourceManager.GetObject(showCard.getImage());
+            pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             updatePointsDisplay();
+            roomsList.Items.Clear();
+            foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
+            {
+                roomsList.Items.Add(roomArray[s].getRoomName());
+            }
+            roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
+            roomArray[playerArray[1].getCurrentRoom()].MoveTo(playerArray[1].getPlayerName());
+            roomArray[playerArray[2].getCurrentRoom()].MoveTo(playerArray[2].getPlayerName());
+            PlayerIndicator.Text = "Human player is " + playerArray[0].getPlayerName();
 
         }
 
@@ -314,6 +324,7 @@ namespace BS_CS_Challenge_Game
             {
                 MoveButton.Enabled = false;
             }
+            updatePointsDisplay();
         }
 
         private void roomsList_SelectedIndexChanged(object sender, EventArgs e)
@@ -372,7 +383,8 @@ namespace BS_CS_Challenge_Game
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             showCard = playerArray[0].getCard(showCard);
-            pictureBox2.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject(showCard.getImage());
+            pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
+
         }
 
         private void PlayCardButton_Click(object sender, EventArgs e)

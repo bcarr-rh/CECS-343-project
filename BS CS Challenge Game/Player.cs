@@ -8,7 +8,6 @@ namespace BS_CS_Challenge_Game
 {
     class Player
     {
-        static int cardCounter;
         String playerName;
         LinkedList<CardInterface> hand;
         int currentRoom;
@@ -24,6 +23,7 @@ namespace BS_CS_Challenge_Game
             cChip = 0;
             iChip = 0;
             qPoint = 0;
+            hand = new LinkedList<CardInterface>();
 
         }
         public CardInterface getCard(CardInterface c)
