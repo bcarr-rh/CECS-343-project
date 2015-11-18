@@ -79,6 +79,22 @@ namespace BS_CS_Challenge_Game
             return qPoint;
         }
 
+        public void addChipChosen(string choice)
+        {
+            if(choice.Equals("The Learning Chip"))
+            {
+                lChip++;
+            }
+            else if(choice.Equals("The Integrity Chip"))
+            {
+                iChip++;
+            }
+            else if(choice.Equals("The Craft Chip"))
+            {
+                cChip++;
+            }
+        }
+
         public void addLChip(int x)
         {
             lChip += x;

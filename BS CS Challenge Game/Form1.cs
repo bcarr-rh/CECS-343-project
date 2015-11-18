@@ -28,6 +28,7 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            MoveButton.Enabled = false;
             deck =  new List<CardInterface>();
             discardDeck =  new List<CardInterface>();
             roomArray = new Room[21];
@@ -198,6 +199,7 @@ namespace BS_CS_Challenge_Game
             roomArray[playerArray[1].getCurrentRoom()].MoveTo(playerArray[1].getPlayerName());
             roomArray[playerArray[2].getCurrentRoom()].MoveTo(playerArray[2].getPlayerName());
             PlayerIndicator.Text = "Human player is " + playerArray[0].getPlayerName();
+            
 
         }
 

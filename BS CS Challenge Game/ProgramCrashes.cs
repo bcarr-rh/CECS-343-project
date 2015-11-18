@@ -22,6 +22,7 @@ namespace BS_CS_Challenge_Game
             {
                 p.addQPoint(5);
                 choseChip chose = new choseChip(1, 1, 1, p);
+                p.addChipChosen(chose.getChoice());
                 return (p.getPlayerName() + " played " + thisImage + " for 5 Quality Points and " + chose.getChoice());
             }
             p.discardPick();

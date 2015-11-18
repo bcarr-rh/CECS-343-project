@@ -21,6 +21,7 @@ namespace BS_CS_Challenge_Game
             if (p.getCurrentRoom() == 7)
             {
                 choseChip chose = new choseChip(1, 0, 1, p);
+                p.addChipChosen(chose.getChoice());
                 return (p.getPlayerName() + " played " + thisImage + " for " + chose.getChoice());
             }
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
