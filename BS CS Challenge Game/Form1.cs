@@ -287,17 +287,12 @@ namespace BS_CS_Challenge_Game
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             moveCount++;
-            String Room = roomsList.SelectedItem.ToString();
-            foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
-            {
-                if (roomArray[s].getRoomName().Equals(Room))
-=======
             try {
                 String Room = roomsList.SelectedItem.ToString();
                 foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
->>>>>>> refs/remotes/origin/AdoniasBranch
+
                 {
                     if (roomArray[s].getRoomName().Equals(Room))
                     {
@@ -332,15 +327,14 @@ namespace BS_CS_Challenge_Game
             {
                 roomsList.Items.Add(roomArray[s].getRoomName());
             }
-<<<<<<< HEAD
+
             if (moveCount == 3)
             {
                 MoveButton.Enabled = false;
             }
             updatePointsDisplay();
-=======
+
             MoveButton.Enabled = false;
->>>>>>> refs/remotes/origin/AdoniasBranch
         }
 
         private void roomsList_SelectedIndexChanged(object sender, EventArgs e)

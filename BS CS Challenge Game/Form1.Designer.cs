@@ -117,7 +117,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(8);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -203,19 +203,15 @@
             // 
             // button63
             // 
-<<<<<<< HEAD
-            this.button63.Location = new System.Drawing.Point(120, 2698);
-            this.button63.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button63.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button63.Location = new System.Drawing.Point(42, 1094);
+            this.button63.Margin = new System.Windows.Forms.Padding(8);
             this.button63.MaximumSize = new System.Drawing.Size(75, 23);
             this.button63.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(188, 58);
+            this.button63.Size = new System.Drawing.Size(75, 23);
             this.button63.TabIndex = 64;
             this.button63.Text = "button63";
             this.button63.UseVisualStyleBackColor = true;
@@ -223,19 +219,15 @@
             // 
             // button62
             // 
-<<<<<<< HEAD
-            this.button62.Location = new System.Drawing.Point(120, 2622);
-            this.button62.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button62.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button62.Location = new System.Drawing.Point(42, 1065);
+            this.button62.Margin = new System.Windows.Forms.Padding(8);
             this.button62.MaximumSize = new System.Drawing.Size(75, 23);
             this.button62.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(188, 58);
+            this.button62.Size = new System.Drawing.Size(75, 23);
             this.button62.TabIndex = 63;
             this.button62.Text = "button62";
             this.button62.UseVisualStyleBackColor = true;
@@ -243,19 +235,15 @@
             // 
             // button61
             // 
-<<<<<<< HEAD
-            this.button61.Location = new System.Drawing.Point(120, 2548);
-            this.button61.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button61.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button61.Location = new System.Drawing.Point(42, 1035);
+            this.button61.Margin = new System.Windows.Forms.Padding(8);
             this.button61.MaximumSize = new System.Drawing.Size(75, 23);
             this.button61.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(188, 58);
+            this.button61.Size = new System.Drawing.Size(75, 23);
             this.button61.TabIndex = 62;
             this.button61.Text = "button61";
             this.button61.UseVisualStyleBackColor = true;
@@ -263,20 +251,16 @@
             // 
             // button60
             // 
-<<<<<<< HEAD
-            this.button60.Location = new System.Drawing.Point(3250, 4455);
-            this.button60.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button60.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button60.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button60.Location = new System.Drawing.Point(1300, 1782);
+            this.button60.Margin = new System.Windows.Forms.Padding(8);
             this.button60.MaximumSize = new System.Drawing.Size(75, 23);
             this.button60.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(188, 58);
+            this.button60.Size = new System.Drawing.Size(75, 23);
             this.button60.TabIndex = 61;
             this.button60.Text = "test";
             this.button60.UseVisualStyleBackColor = true;
@@ -284,20 +268,16 @@
             // 
             // button59
             // 
-<<<<<<< HEAD
-            this.button59.Location = new System.Drawing.Point(3250, 4380);
-            this.button59.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button59.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button59.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button59.Location = new System.Drawing.Point(1300, 1752);
+            this.button59.Margin = new System.Windows.Forms.Padding(8);
             this.button59.MaximumSize = new System.Drawing.Size(75, 23);
             this.button59.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(188, 58);
+            this.button59.Size = new System.Drawing.Size(75, 23);
             this.button59.TabIndex = 60;
             this.button59.Text = "test";
             this.button59.UseVisualStyleBackColor = true;
@@ -305,20 +285,16 @@
             // 
             // button58
             // 
-<<<<<<< HEAD
-            this.button58.Location = new System.Drawing.Point(3250, 4305);
-            this.button58.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button58.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button58.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button58.Location = new System.Drawing.Point(1300, 1722);
+            this.button58.Margin = new System.Windows.Forms.Padding(8);
             this.button58.MaximumSize = new System.Drawing.Size(75, 23);
             this.button58.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(188, 58);
+            this.button58.Size = new System.Drawing.Size(75, 23);
             this.button58.TabIndex = 59;
             this.button58.Text = "test";
             this.button58.UseVisualStyleBackColor = true;
@@ -326,20 +302,16 @@
             // 
             // button57
             // 
-<<<<<<< HEAD
-            this.button57.Location = new System.Drawing.Point(1662, 4590);
-            this.button57.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button57.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button57.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button57.Location = new System.Drawing.Point(665, 1836);
+            this.button57.Margin = new System.Windows.Forms.Padding(8);
             this.button57.MaximumSize = new System.Drawing.Size(75, 23);
             this.button57.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(188, 58);
+            this.button57.Size = new System.Drawing.Size(75, 23);
             this.button57.TabIndex = 58;
             this.button57.Text = "test";
             this.button57.UseVisualStyleBackColor = true;
@@ -347,20 +319,16 @@
             // 
             // button56
             // 
-<<<<<<< HEAD
-            this.button56.Location = new System.Drawing.Point(1662, 4515);
-            this.button56.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button56.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button56.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button56.Location = new System.Drawing.Point(665, 1806);
+            this.button56.Margin = new System.Windows.Forms.Padding(8);
             this.button56.MaximumSize = new System.Drawing.Size(75, 23);
             this.button56.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(188, 58);
+            this.button56.Size = new System.Drawing.Size(75, 23);
             this.button56.TabIndex = 57;
             this.button56.Text = "test";
             this.button56.UseVisualStyleBackColor = true;
@@ -368,20 +336,16 @@
             // 
             // button55
             // 
-<<<<<<< HEAD
-            this.button55.Location = new System.Drawing.Point(1662, 4440);
-            this.button55.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button55.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button55.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button55.Location = new System.Drawing.Point(665, 1776);
+            this.button55.Margin = new System.Windows.Forms.Padding(8);
             this.button55.MaximumSize = new System.Drawing.Size(75, 23);
             this.button55.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(188, 58);
+            this.button55.Size = new System.Drawing.Size(75, 23);
             this.button55.TabIndex = 56;
             this.button55.Text = "test";
             this.button55.UseVisualStyleBackColor = true;
@@ -389,20 +353,16 @@
             // 
             // button54
             // 
-<<<<<<< HEAD
-            this.button54.Location = new System.Drawing.Point(478, 4475);
-            this.button54.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button54.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button54.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button54.Location = new System.Drawing.Point(191, 1790);
+            this.button54.Margin = new System.Windows.Forms.Padding(8);
             this.button54.MaximumSize = new System.Drawing.Size(75, 23);
             this.button54.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(188, 58);
+            this.button54.Size = new System.Drawing.Size(75, 23);
             this.button54.TabIndex = 55;
             this.button54.Text = "test";
             this.button54.UseVisualStyleBackColor = true;
@@ -410,20 +370,16 @@
             // 
             // button53
             // 
-<<<<<<< HEAD
-            this.button53.Location = new System.Drawing.Point(478, 4400);
-            this.button53.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button53.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button53.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button53.Location = new System.Drawing.Point(191, 1760);
+            this.button53.Margin = new System.Windows.Forms.Padding(8);
             this.button53.MaximumSize = new System.Drawing.Size(75, 23);
             this.button53.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(188, 58);
+            this.button53.Size = new System.Drawing.Size(75, 23);
             this.button53.TabIndex = 54;
             this.button53.Text = "test";
             this.button53.UseVisualStyleBackColor = true;
@@ -431,20 +387,16 @@
             // 
             // button52
             // 
-<<<<<<< HEAD
-            this.button52.Location = new System.Drawing.Point(478, 4325);
-            this.button52.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button52.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button52.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button52.Location = new System.Drawing.Point(191, 1730);
+            this.button52.Margin = new System.Windows.Forms.Padding(8);
             this.button52.MaximumSize = new System.Drawing.Size(75, 23);
             this.button52.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(188, 58);
+            this.button52.Size = new System.Drawing.Size(75, 23);
             this.button52.TabIndex = 53;
             this.button52.Text = "test";
             this.button52.UseVisualStyleBackColor = true;
@@ -452,19 +404,15 @@
             // 
             // button51
             // 
-<<<<<<< HEAD
-            this.button51.Location = new System.Drawing.Point(3768, 3040);
-            this.button51.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button51.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button51.Location = new System.Drawing.Point(1507, 1216);
+            this.button51.Margin = new System.Windows.Forms.Padding(8);
             this.button51.MaximumSize = new System.Drawing.Size(75, 23);
             this.button51.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(188, 58);
+            this.button51.Size = new System.Drawing.Size(75, 23);
             this.button51.TabIndex = 52;
             this.button51.Text = "button51";
             this.button51.UseVisualStyleBackColor = true;
@@ -472,19 +420,15 @@
             // 
             // button50
             // 
-<<<<<<< HEAD
-            this.button50.Location = new System.Drawing.Point(3768, 2965);
-            this.button50.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button50.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button50.Location = new System.Drawing.Point(1507, 1186);
+            this.button50.Margin = new System.Windows.Forms.Padding(8);
             this.button50.MaximumSize = new System.Drawing.Size(75, 23);
             this.button50.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(188, 58);
+            this.button50.Size = new System.Drawing.Size(75, 23);
             this.button50.TabIndex = 51;
             this.button50.Text = "button50";
             this.button50.UseVisualStyleBackColor = true;
@@ -492,19 +436,15 @@
             // 
             // button49
             // 
-<<<<<<< HEAD
-            this.button49.Location = new System.Drawing.Point(3768, 2890);
-            this.button49.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button49.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button49.Location = new System.Drawing.Point(1507, 1156);
+            this.button49.Margin = new System.Windows.Forms.Padding(8);
             this.button49.MaximumSize = new System.Drawing.Size(75, 23);
             this.button49.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(188, 58);
+            this.button49.Size = new System.Drawing.Size(75, 23);
             this.button49.TabIndex = 50;
             this.button49.Text = "button49";
             this.button49.UseVisualStyleBackColor = true;
@@ -512,19 +452,15 @@
             // 
             // button48
             // 
-<<<<<<< HEAD
-            this.button48.Location = new System.Drawing.Point(3178, 3672);
-            this.button48.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button48.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button48.Location = new System.Drawing.Point(1271, 1469);
+            this.button48.Margin = new System.Windows.Forms.Padding(8);
             this.button48.MaximumSize = new System.Drawing.Size(75, 23);
             this.button48.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(188, 58);
+            this.button48.Size = new System.Drawing.Size(75, 23);
             this.button48.TabIndex = 49;
             this.button48.Text = "button48";
             this.button48.UseVisualStyleBackColor = true;
@@ -532,19 +468,15 @@
             // 
             // button47
             // 
-<<<<<<< HEAD
-            this.button47.Location = new System.Drawing.Point(3178, 3598);
-            this.button47.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button47.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button47.Location = new System.Drawing.Point(1271, 1439);
+            this.button47.Margin = new System.Windows.Forms.Padding(8);
             this.button47.MaximumSize = new System.Drawing.Size(75, 23);
             this.button47.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(188, 58);
+            this.button47.Size = new System.Drawing.Size(75, 23);
             this.button47.TabIndex = 48;
             this.button47.Text = "button47";
             this.button47.UseVisualStyleBackColor = true;
@@ -552,19 +484,15 @@
             // 
             // button46
             // 
-<<<<<<< HEAD
-            this.button46.Location = new System.Drawing.Point(3178, 3522);
-            this.button46.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button46.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button46.Location = new System.Drawing.Point(1271, 1409);
+            this.button46.Margin = new System.Windows.Forms.Padding(8);
             this.button46.MaximumSize = new System.Drawing.Size(75, 23);
             this.button46.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(188, 58);
+            this.button46.Size = new System.Drawing.Size(75, 23);
             this.button46.TabIndex = 47;
             this.button46.Text = "button46";
             this.button46.UseVisualStyleBackColor = true;
@@ -572,19 +500,15 @@
             // 
             // button45
             // 
-<<<<<<< HEAD
-            this.button45.Location = new System.Drawing.Point(2575, 3672);
-            this.button45.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button45.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button45.Location = new System.Drawing.Point(1030, 1469);
+            this.button45.Margin = new System.Windows.Forms.Padding(8);
             this.button45.MaximumSize = new System.Drawing.Size(75, 23);
             this.button45.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(188, 58);
+            this.button45.Size = new System.Drawing.Size(75, 23);
             this.button45.TabIndex = 46;
             this.button45.Text = "button45";
             this.button45.UseVisualStyleBackColor = true;
@@ -592,19 +516,15 @@
             // 
             // button44
             // 
-<<<<<<< HEAD
-            this.button44.Location = new System.Drawing.Point(2575, 3598);
-            this.button44.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button44.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button44.Location = new System.Drawing.Point(1030, 1439);
+            this.button44.Margin = new System.Windows.Forms.Padding(8);
             this.button44.MaximumSize = new System.Drawing.Size(75, 23);
             this.button44.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(188, 58);
+            this.button44.Size = new System.Drawing.Size(75, 23);
             this.button44.TabIndex = 45;
             this.button44.Text = "button44";
             this.button44.UseVisualStyleBackColor = true;
@@ -612,19 +532,15 @@
             // 
             // button43
             // 
-<<<<<<< HEAD
-            this.button43.Location = new System.Drawing.Point(2575, 3522);
-            this.button43.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button43.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button43.Location = new System.Drawing.Point(1030, 1409);
+            this.button43.Margin = new System.Windows.Forms.Padding(8);
             this.button43.MaximumSize = new System.Drawing.Size(75, 23);
             this.button43.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(188, 58);
+            this.button43.Size = new System.Drawing.Size(75, 23);
             this.button43.TabIndex = 44;
             this.button43.Text = "button43";
             this.button43.UseVisualStyleBackColor = true;
@@ -632,19 +548,15 @@
             // 
             // button42
             // 
-<<<<<<< HEAD
-            this.button42.Location = new System.Drawing.Point(1625, 3672);
-            this.button42.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button42.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button42.Location = new System.Drawing.Point(650, 1469);
+            this.button42.Margin = new System.Windows.Forms.Padding(8);
             this.button42.MaximumSize = new System.Drawing.Size(75, 23);
             this.button42.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(188, 58);
+            this.button42.Size = new System.Drawing.Size(75, 23);
             this.button42.TabIndex = 43;
             this.button42.Text = "button42";
             this.button42.UseVisualStyleBackColor = true;
@@ -653,19 +565,15 @@
             // 
             // button41
             // 
-<<<<<<< HEAD
-            this.button41.Location = new System.Drawing.Point(1625, 3598);
-            this.button41.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button41.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button41.Location = new System.Drawing.Point(650, 1439);
+            this.button41.Margin = new System.Windows.Forms.Padding(8);
             this.button41.MaximumSize = new System.Drawing.Size(75, 23);
             this.button41.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(188, 58);
+            this.button41.Size = new System.Drawing.Size(75, 23);
             this.button41.TabIndex = 42;
             this.button41.Text = "button41";
             this.button41.UseVisualStyleBackColor = true;
@@ -674,19 +582,15 @@
             // 
             // button40
             // 
-<<<<<<< HEAD
-            this.button40.Location = new System.Drawing.Point(1625, 3522);
-            this.button40.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button40.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button40.Location = new System.Drawing.Point(650, 1409);
+            this.button40.Margin = new System.Windows.Forms.Padding(8);
             this.button40.MaximumSize = new System.Drawing.Size(75, 23);
             this.button40.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(188, 58);
+            this.button40.Size = new System.Drawing.Size(75, 23);
             this.button40.TabIndex = 41;
             this.button40.Text = "button40";
             this.button40.UseVisualStyleBackColor = true;
@@ -695,20 +599,16 @@
             // 
             // button39
             // 
-<<<<<<< HEAD
-            this.button39.Location = new System.Drawing.Point(852, 3672);
-            this.button39.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button39.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button39.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button39.Location = new System.Drawing.Point(341, 1469);
+            this.button39.Margin = new System.Windows.Forms.Padding(8);
             this.button39.MaximumSize = new System.Drawing.Size(75, 23);
             this.button39.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(188, 58);
+            this.button39.Size = new System.Drawing.Size(75, 23);
             this.button39.TabIndex = 40;
             this.button39.Text = "button39";
             this.button39.UseVisualStyleBackColor = true;
@@ -716,20 +616,16 @@
             // 
             // button38
             // 
-<<<<<<< HEAD
-            this.button38.Location = new System.Drawing.Point(852, 3598);
-            this.button38.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button38.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button38.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button38.Location = new System.Drawing.Point(341, 1439);
+            this.button38.Margin = new System.Windows.Forms.Padding(8);
             this.button38.MaximumSize = new System.Drawing.Size(75, 23);
             this.button38.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(188, 58);
+            this.button38.Size = new System.Drawing.Size(75, 23);
             this.button38.TabIndex = 39;
             this.button38.Text = "button38";
             this.button38.UseVisualStyleBackColor = true;
@@ -737,20 +633,16 @@
             // 
             // button37
             // 
-<<<<<<< HEAD
-            this.button37.Location = new System.Drawing.Point(852, 3522);
-            this.button37.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button37.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button37.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button37.Location = new System.Drawing.Point(341, 1409);
+            this.button37.Margin = new System.Windows.Forms.Padding(8);
             this.button37.MaximumSize = new System.Drawing.Size(75, 23);
             this.button37.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(188, 58);
+            this.button37.Size = new System.Drawing.Size(75, 23);
             this.button37.TabIndex = 38;
             this.button37.Text = "button37";
             this.button37.UseVisualStyleBackColor = true;
@@ -758,19 +650,15 @@
             // 
             // button36
             // 
-<<<<<<< HEAD
-            this.button36.Location = new System.Drawing.Point(2698, 3040);
-            this.button36.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button36.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button36.Location = new System.Drawing.Point(1079, 1216);
+            this.button36.Margin = new System.Windows.Forms.Padding(8);
             this.button36.MaximumSize = new System.Drawing.Size(75, 23);
             this.button36.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(188, 58);
+            this.button36.Size = new System.Drawing.Size(75, 23);
             this.button36.TabIndex = 37;
             this.button36.Text = "button36";
             this.button36.UseVisualStyleBackColor = true;
@@ -778,19 +666,15 @@
             // 
             // button35
             // 
-<<<<<<< HEAD
-            this.button35.Location = new System.Drawing.Point(2698, 2965);
-            this.button35.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button35.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button35.Location = new System.Drawing.Point(1079, 1186);
+            this.button35.Margin = new System.Windows.Forms.Padding(8);
             this.button35.MaximumSize = new System.Drawing.Size(75, 23);
             this.button35.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(188, 58);
+            this.button35.Size = new System.Drawing.Size(75, 23);
             this.button35.TabIndex = 36;
             this.button35.Text = "button35";
             this.button35.UseVisualStyleBackColor = true;
@@ -798,19 +682,15 @@
             // 
             // button34
             // 
-<<<<<<< HEAD
-            this.button34.Location = new System.Drawing.Point(2698, 2890);
-            this.button34.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button34.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button34.Location = new System.Drawing.Point(1079, 1156);
+            this.button34.Margin = new System.Windows.Forms.Padding(8);
             this.button34.MaximumSize = new System.Drawing.Size(75, 23);
             this.button34.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(188, 58);
+            this.button34.Size = new System.Drawing.Size(75, 23);
             this.button34.TabIndex = 35;
             this.button34.Text = "button34";
             this.button34.UseVisualStyleBackColor = true;
@@ -818,19 +698,15 @@
             // 
             // button33
             // 
-<<<<<<< HEAD
-            this.button33.Location = new System.Drawing.Point(720, 3115);
-            this.button33.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button33.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button33.Location = new System.Drawing.Point(282, 1262);
+            this.button33.Margin = new System.Windows.Forms.Padding(8);
             this.button33.MaximumSize = new System.Drawing.Size(75, 23);
             this.button33.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(188, 58);
+            this.button33.Size = new System.Drawing.Size(75, 23);
             this.button33.TabIndex = 34;
             this.button33.Text = "button33";
             this.button33.UseVisualStyleBackColor = true;
@@ -839,19 +715,15 @@
             // 
             // button32
             // 
-<<<<<<< HEAD
-            this.button32.Location = new System.Drawing.Point(720, 3040);
-            this.button32.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button32.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button32.Location = new System.Drawing.Point(282, 1232);
+            this.button32.Margin = new System.Windows.Forms.Padding(8);
             this.button32.MaximumSize = new System.Drawing.Size(75, 23);
             this.button32.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(188, 58);
+            this.button32.Size = new System.Drawing.Size(75, 23);
             this.button32.TabIndex = 33;
             this.button32.Text = "button32";
             this.button32.UseVisualStyleBackColor = true;
@@ -860,19 +732,15 @@
             // 
             // button31
             // 
-<<<<<<< HEAD
-            this.button31.Location = new System.Drawing.Point(720, 2965);
-            this.button31.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button31.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button31.Location = new System.Drawing.Point(282, 1202);
+            this.button31.Margin = new System.Windows.Forms.Padding(8);
             this.button31.MaximumSize = new System.Drawing.Size(75, 23);
             this.button31.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(188, 58);
+            this.button31.Size = new System.Drawing.Size(75, 23);
             this.button31.TabIndex = 32;
             this.button31.Text = "button31";
             this.button31.UseVisualStyleBackColor = true;
@@ -881,19 +749,15 @@
             // 
             // button30
             // 
-<<<<<<< HEAD
-            this.button30.Location = new System.Drawing.Point(3228, 2480);
-            this.button30.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button30.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button30.Location = new System.Drawing.Point(1291, 992);
+            this.button30.Margin = new System.Windows.Forms.Padding(8);
             this.button30.MaximumSize = new System.Drawing.Size(75, 23);
             this.button30.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(188, 58);
+            this.button30.Size = new System.Drawing.Size(75, 23);
             this.button30.TabIndex = 31;
             this.button30.Text = "button30";
             this.button30.UseVisualStyleBackColor = true;
@@ -901,19 +765,15 @@
             // 
             // button29
             // 
-<<<<<<< HEAD
-            this.button29.Location = new System.Drawing.Point(3228, 2405);
-            this.button29.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button29.Location = new System.Drawing.Point(1291, 962);
+            this.button29.Margin = new System.Windows.Forms.Padding(8);
             this.button29.MaximumSize = new System.Drawing.Size(75, 23);
             this.button29.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(188, 58);
+            this.button29.Size = new System.Drawing.Size(75, 23);
             this.button29.TabIndex = 30;
             this.button29.Text = "button29";
             this.button29.UseVisualStyleBackColor = true;
@@ -921,19 +781,15 @@
             // 
             // button28
             // 
-<<<<<<< HEAD
-            this.button28.Location = new System.Drawing.Point(3228, 2330);
-            this.button28.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button28.Location = new System.Drawing.Point(1291, 932);
+            this.button28.Margin = new System.Windows.Forms.Padding(8);
             this.button28.MaximumSize = new System.Drawing.Size(75, 23);
             this.button28.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(188, 58);
+            this.button28.Size = new System.Drawing.Size(75, 23);
             this.button28.TabIndex = 29;
             this.button28.Text = "button28";
             this.button28.UseVisualStyleBackColor = true;
@@ -941,19 +797,15 @@
             // 
             // button27
             // 
-<<<<<<< HEAD
-            this.button27.Location = new System.Drawing.Point(2698, 2575);
-            this.button27.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button27.Location = new System.Drawing.Point(1079, 1030);
+            this.button27.Margin = new System.Windows.Forms.Padding(8);
             this.button27.MaximumSize = new System.Drawing.Size(75, 23);
             this.button27.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(188, 58);
+            this.button27.Size = new System.Drawing.Size(75, 23);
             this.button27.TabIndex = 28;
             this.button27.Text = "button27";
             this.button27.UseVisualStyleBackColor = true;
@@ -961,19 +813,15 @@
             // 
             // button26
             // 
-<<<<<<< HEAD
-            this.button26.Location = new System.Drawing.Point(2698, 2502);
-            this.button26.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button26.Location = new System.Drawing.Point(1079, 1001);
+            this.button26.Margin = new System.Windows.Forms.Padding(8);
             this.button26.MaximumSize = new System.Drawing.Size(75, 23);
             this.button26.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(188, 58);
+            this.button26.Size = new System.Drawing.Size(75, 23);
             this.button26.TabIndex = 27;
             this.button26.Text = "button26";
             this.button26.UseVisualStyleBackColor = true;
@@ -981,19 +829,15 @@
             // 
             // button25
             // 
-<<<<<<< HEAD
-            this.button25.Location = new System.Drawing.Point(2698, 2425);
-            this.button25.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button25.Location = new System.Drawing.Point(1079, 970);
+            this.button25.Margin = new System.Windows.Forms.Padding(8);
             this.button25.MaximumSize = new System.Drawing.Size(75, 23);
             this.button25.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(188, 58);
+            this.button25.Size = new System.Drawing.Size(75, 23);
             this.button25.TabIndex = 26;
             this.button25.Text = "button25";
             this.button25.UseVisualStyleBackColor = true;
@@ -1001,19 +845,15 @@
             // 
             // button24
             // 
-<<<<<<< HEAD
-            this.button24.Location = new System.Drawing.Point(1935, 2575);
-            this.button24.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button24.Location = new System.Drawing.Point(774, 1030);
+            this.button24.Margin = new System.Windows.Forms.Padding(8);
             this.button24.MaximumSize = new System.Drawing.Size(75, 23);
             this.button24.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(188, 58);
+            this.button24.Size = new System.Drawing.Size(75, 23);
             this.button24.TabIndex = 25;
             this.button24.Text = "button24";
             this.button24.UseVisualStyleBackColor = true;
@@ -1021,19 +861,15 @@
             // 
             // button23
             // 
-<<<<<<< HEAD
-            this.button23.Location = new System.Drawing.Point(1935, 2502);
-            this.button23.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button23.Location = new System.Drawing.Point(774, 1001);
+            this.button23.Margin = new System.Windows.Forms.Padding(8);
             this.button23.MaximumSize = new System.Drawing.Size(75, 23);
             this.button23.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(188, 58);
+            this.button23.Size = new System.Drawing.Size(75, 23);
             this.button23.TabIndex = 24;
             this.button23.Text = "button23";
             this.button23.UseVisualStyleBackColor = true;
@@ -1041,19 +877,15 @@
             // 
             // button22
             // 
-<<<<<<< HEAD
-            this.button22.Location = new System.Drawing.Point(1935, 2425);
-            this.button22.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button22.Location = new System.Drawing.Point(774, 970);
+            this.button22.Margin = new System.Windows.Forms.Padding(8);
             this.button22.MaximumSize = new System.Drawing.Size(75, 23);
             this.button22.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(188, 58);
+            this.button22.Size = new System.Drawing.Size(75, 23);
             this.button22.TabIndex = 23;
             this.button22.Text = "button22";
             this.button22.UseVisualStyleBackColor = true;
@@ -1061,19 +893,15 @@
             // 
             // button21
             // 
-<<<<<<< HEAD
-            this.button21.Location = new System.Drawing.Point(808, 2575);
-            this.button21.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button21.Location = new System.Drawing.Point(323, 1030);
+            this.button21.Margin = new System.Windows.Forms.Padding(8);
             this.button21.MaximumSize = new System.Drawing.Size(75, 23);
             this.button21.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(188, 58);
+            this.button21.Size = new System.Drawing.Size(75, 23);
             this.button21.TabIndex = 22;
             this.button21.Text = "button21";
             this.button21.UseVisualStyleBackColor = true;
@@ -1081,19 +909,15 @@
             // 
             // button20
             // 
-<<<<<<< HEAD
-            this.button20.Location = new System.Drawing.Point(808, 2500);
-            this.button20.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button20.Location = new System.Drawing.Point(323, 1000);
+            this.button20.Margin = new System.Windows.Forms.Padding(8);
             this.button20.MaximumSize = new System.Drawing.Size(75, 23);
             this.button20.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(188, 58);
+            this.button20.Size = new System.Drawing.Size(75, 23);
             this.button20.TabIndex = 21;
             this.button20.Text = "button20";
             this.button20.UseVisualStyleBackColor = true;
@@ -1101,19 +925,15 @@
             // 
             // button19
             // 
-<<<<<<< HEAD
-            this.button19.Location = new System.Drawing.Point(808, 2425);
-            this.button19.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button19.Location = new System.Drawing.Point(323, 970);
+            this.button19.Margin = new System.Windows.Forms.Padding(8);
             this.button19.MaximumSize = new System.Drawing.Size(75, 23);
             this.button19.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(188, 58);
+            this.button19.Size = new System.Drawing.Size(75, 23);
             this.button19.TabIndex = 20;
             this.button19.Text = "button19";
             this.button19.UseVisualStyleBackColor = true;
@@ -1121,19 +941,15 @@
             // 
             // button18
             // 
-<<<<<<< HEAD
-            this.button18.Location = new System.Drawing.Point(3388, 1670);
-            this.button18.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button18.Location = new System.Drawing.Point(1355, 668);
+            this.button18.Margin = new System.Windows.Forms.Padding(8);
             this.button18.MaximumSize = new System.Drawing.Size(75, 23);
             this.button18.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(188, 58);
+            this.button18.Size = new System.Drawing.Size(75, 23);
             this.button18.TabIndex = 19;
             this.button18.Text = "button18";
             this.button18.UseVisualStyleBackColor = true;
@@ -1141,19 +957,15 @@
             // 
             // button17
             // 
-<<<<<<< HEAD
-            this.button17.Location = new System.Drawing.Point(3388, 1595);
-            this.button17.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button17.Location = new System.Drawing.Point(1355, 638);
+            this.button17.Margin = new System.Windows.Forms.Padding(8);
             this.button17.MaximumSize = new System.Drawing.Size(75, 23);
             this.button17.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(188, 58);
+            this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 18;
             this.button17.Text = "button17";
             this.button17.UseVisualStyleBackColor = true;
@@ -1161,19 +973,15 @@
             // 
             // button16
             // 
-<<<<<<< HEAD
-            this.button16.Location = new System.Drawing.Point(3388, 1520);
-            this.button16.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button16.Location = new System.Drawing.Point(1355, 608);
+            this.button16.Margin = new System.Windows.Forms.Padding(8);
             this.button16.MaximumSize = new System.Drawing.Size(75, 23);
             this.button16.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(188, 58);
+            this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 17;
             this.button16.Text = "button16";
             this.button16.UseVisualStyleBackColor = true;
@@ -1181,19 +989,15 @@
             // 
             // button15
             // 
-<<<<<<< HEAD
-            this.button15.Location = new System.Drawing.Point(1615, 1745);
-            this.button15.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button15.Location = new System.Drawing.Point(640, 714);
+            this.button15.Margin = new System.Windows.Forms.Padding(8);
             this.button15.MaximumSize = new System.Drawing.Size(75, 23);
             this.button15.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(188, 58);
+            this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 16;
             this.button15.Text = "button15";
             this.button15.UseVisualStyleBackColor = true;
@@ -1201,19 +1005,15 @@
             // 
             // button14
             // 
-<<<<<<< HEAD
-            this.button14.Location = new System.Drawing.Point(1615, 1670);
-            this.button14.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button14.Location = new System.Drawing.Point(640, 684);
+            this.button14.Margin = new System.Windows.Forms.Padding(8);
             this.button14.MaximumSize = new System.Drawing.Size(75, 23);
             this.button14.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(188, 58);
+            this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 15;
             this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = true;
@@ -1221,19 +1021,15 @@
             // 
             // button13
             // 
-<<<<<<< HEAD
-            this.button13.Location = new System.Drawing.Point(1615, 1595);
-            this.button13.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button13.Location = new System.Drawing.Point(640, 654);
+            this.button13.Margin = new System.Windows.Forms.Padding(8);
             this.button13.MaximumSize = new System.Drawing.Size(75, 23);
             this.button13.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(188, 58);
+            this.button13.Size = new System.Drawing.Size(75, 23);
             this.button13.TabIndex = 14;
             this.button13.Text = "button13";
             this.button13.UseVisualStyleBackColor = true;
@@ -1241,19 +1037,15 @@
             // 
             // button12
             // 
-<<<<<<< HEAD
-            this.button12.Location = new System.Drawing.Point(1492, 988);
-            this.button12.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button12.Location = new System.Drawing.Point(597, 395);
+            this.button12.Margin = new System.Windows.Forms.Padding(8);
             this.button12.MaximumSize = new System.Drawing.Size(75, 23);
             this.button12.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(188, 58);
+            this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 13;
             this.button12.Text = "button12";
             this.button12.UseVisualStyleBackColor = true;
@@ -1261,19 +1053,15 @@
             // 
             // button11
             // 
-<<<<<<< HEAD
-            this.button11.Location = new System.Drawing.Point(1492, 912);
-            this.button11.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button11.Location = new System.Drawing.Point(597, 365);
+            this.button11.Margin = new System.Windows.Forms.Padding(8);
             this.button11.MaximumSize = new System.Drawing.Size(75, 23);
             this.button11.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(188, 58);
+            this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 12;
             this.button11.Text = "button11";
             this.button11.UseVisualStyleBackColor = true;
@@ -1281,19 +1069,15 @@
             // 
             // button10
             // 
-<<<<<<< HEAD
-            this.button10.Location = new System.Drawing.Point(1492, 838);
-            this.button10.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.Location = new System.Drawing.Point(597, 335);
+            this.button10.Margin = new System.Windows.Forms.Padding(8);
             this.button10.MaximumSize = new System.Drawing.Size(75, 23);
             this.button10.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(188, 58);
+            this.button10.Size = new System.Drawing.Size(75, 23);
             this.button10.TabIndex = 11;
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
@@ -1301,19 +1085,15 @@
             // 
             // button9
             // 
-<<<<<<< HEAD
-            this.button9.Location = new System.Drawing.Point(2868, 570);
-            this.button9.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button9.Location = new System.Drawing.Point(1147, 228);
+            this.button9.Margin = new System.Windows.Forms.Padding(8);
             this.button9.MaximumSize = new System.Drawing.Size(75, 23);
             this.button9.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(188, 58);
+            this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 10;
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
@@ -1321,19 +1101,15 @@
             // 
             // button8
             // 
-<<<<<<< HEAD
-            this.button8.Location = new System.Drawing.Point(2868, 495);
-            this.button8.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button8.Location = new System.Drawing.Point(1147, 198);
+            this.button8.Margin = new System.Windows.Forms.Padding(8);
             this.button8.MaximumSize = new System.Drawing.Size(75, 23);
             this.button8.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(188, 58);
+            this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 9;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
@@ -1341,19 +1117,15 @@
             // 
             // button7
             // 
-<<<<<<< HEAD
-            this.button7.Location = new System.Drawing.Point(2868, 418);
-            this.button7.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button7.Location = new System.Drawing.Point(1147, 167);
+            this.button7.Margin = new System.Windows.Forms.Padding(8);
             this.button7.MaximumSize = new System.Drawing.Size(75, 23);
             this.button7.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(188, 58);
+            this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 7;
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
@@ -1361,19 +1133,15 @@
             // 
             // button6
             // 
-<<<<<<< HEAD
-            this.button6.Location = new System.Drawing.Point(1552, 265);
-            this.button6.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.Location = new System.Drawing.Point(436, 97);
+            this.button6.Margin = new System.Windows.Forms.Padding(8);
             this.button6.MaximumSize = new System.Drawing.Size(75, 23);
             this.button6.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(188, 58);
+            this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 6;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
@@ -1381,19 +1149,15 @@
             // 
             // button5
             // 
-<<<<<<< HEAD
-            this.button5.Location = new System.Drawing.Point(1552, 190);
-            this.button5.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Location = new System.Drawing.Point(436, 68);
+            this.button5.Margin = new System.Windows.Forms.Padding(8);
             this.button5.MaximumSize = new System.Drawing.Size(75, 23);
             this.button5.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(188, 58);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 5;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
@@ -1404,18 +1168,12 @@
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-<<<<<<< HEAD
-            this.button4.Location = new System.Drawing.Point(1550, 120);
-            this.button4.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(4275, 10820);
-=======
             this.button4.Location = new System.Drawing.Point(436, 39);
+            this.button4.Margin = new System.Windows.Forms.Padding(8);
             this.button4.MaximumSize = new System.Drawing.Size(75, 23);
             this.button4.MinimumSize = new System.Drawing.Size(75, 23);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button4.TabIndex = 4;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
@@ -1424,19 +1182,15 @@
             // 
             // button3
             // 
-<<<<<<< HEAD
-            this.button3.Location = new System.Drawing.Point(365, 795);
-            this.button3.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Location = new System.Drawing.Point(146, 318);
+            this.button3.Margin = new System.Windows.Forms.Padding(8);
             this.button3.MaximumSize = new System.Drawing.Size(75, 23);
             this.button3.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 58);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -1444,19 +1198,15 @@
             // 
             // button2
             // 
-<<<<<<< HEAD
-            this.button2.Location = new System.Drawing.Point(365, 720);
-            this.button2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(146, 288);
+            this.button2.Margin = new System.Windows.Forms.Padding(8);
             this.button2.MaximumSize = new System.Drawing.Size(75, 23);
             this.button2.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 58);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -1464,19 +1214,15 @@
             // 
             // button1
             // 
-<<<<<<< HEAD
-            this.button1.Location = new System.Drawing.Point(365, 645);
-            this.button1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
-=======
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(146, 258);
+            this.button1.Margin = new System.Windows.Forms.Padding(8);
             this.button1.MaximumSize = new System.Drawing.Size(75, 23);
             this.button1.MinimumSize = new System.Drawing.Size(75, 23);
->>>>>>> refs/remotes/origin/AdoniasBranch
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 58);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "test";
             this.button1.UseVisualStyleBackColor = true;
@@ -1488,7 +1234,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(4175, 5000);
             this.pictureBox1.TabIndex = 0;
@@ -1500,7 +1246,7 @@
             this.panel2.Controls.Add(this.PlayerIndicator);
             this.panel2.Controls.Add(this.PointsDisplay);
             this.panel2.Location = new System.Drawing.Point(852, 10);
-            this.panel2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel2.Margin = new System.Windows.Forms.Padding(8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(2525, 530);
             this.panel2.TabIndex = 1;
@@ -1508,7 +1254,7 @@
             // PlayerIndicator
             // 
             this.PlayerIndicator.Location = new System.Drawing.Point(10, 345);
-            this.PlayerIndicator.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.PlayerIndicator.Margin = new System.Windows.Forms.Padding(8);
             this.PlayerIndicator.Multiline = true;
             this.PlayerIndicator.Name = "PlayerIndicator";
             this.PlayerIndicator.ReadOnly = true;
@@ -1518,7 +1264,7 @@
             // PointsDisplay
             // 
             this.PointsDisplay.Location = new System.Drawing.Point(10, 10);
-            this.PointsDisplay.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.PointsDisplay.Margin = new System.Windows.Forms.Padding(8);
             this.PointsDisplay.Multiline = true;
             this.PointsDisplay.Name = "PointsDisplay";
             this.PointsDisplay.ReadOnly = true;
@@ -1534,7 +1280,7 @@
             this.panel1.Controls.Add(this.MoveButton);
             this.panel1.Controls.Add(this.DrawCard);
             this.panel1.Location = new System.Drawing.Point(10, 10);
-            this.panel1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(825, 530);
             this.panel1.TabIndex = 0;
@@ -1544,7 +1290,7 @@
             this.roomsList.FormattingEnabled = true;
             this.roomsList.ItemHeight = 31;
             this.roomsList.Location = new System.Drawing.Point(22, 258);
-            this.roomsList.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.roomsList.Margin = new System.Windows.Forms.Padding(8);
             this.roomsList.Name = "roomsList";
             this.roomsList.Size = new System.Drawing.Size(339, 221);
             this.roomsList.TabIndex = 5;
@@ -1554,7 +1300,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox2.Location = new System.Drawing.Point(392, 20);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(8);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(432, 475);
             this.pictureBox2.TabIndex = 4;
@@ -1564,7 +1310,7 @@
             // PlayCardButton
             // 
             this.PlayCardButton.Location = new System.Drawing.Point(22, 182);
-            this.PlayCardButton.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.PlayCardButton.Margin = new System.Windows.Forms.Padding(8);
             this.PlayCardButton.Name = "PlayCardButton";
             this.PlayCardButton.Size = new System.Drawing.Size(188, 58);
             this.PlayCardButton.TabIndex = 2;
@@ -1575,7 +1321,7 @@
             // MoveButton
             // 
             this.MoveButton.Location = new System.Drawing.Point(22, 108);
-            this.MoveButton.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.MoveButton.Margin = new System.Windows.Forms.Padding(8);
             this.MoveButton.Name = "MoveButton";
             this.MoveButton.Size = new System.Drawing.Size(188, 58);
             this.MoveButton.TabIndex = 1;
@@ -1586,7 +1332,7 @@
             // DrawCard
             // 
             this.DrawCard.Location = new System.Drawing.Point(22, 32);
-            this.DrawCard.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.DrawCard.Margin = new System.Windows.Forms.Padding(8);
             this.DrawCard.Name = "DrawCard";
             this.DrawCard.Size = new System.Drawing.Size(188, 58);
             this.DrawCard.TabIndex = 0;
@@ -1597,8 +1343,7 @@
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(240F, 240F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -1607,7 +1352,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "Form1";
             this.Text = "BS CS Challenge Game";
             this.Load += new System.EventHandler(this.Form1_Load);
