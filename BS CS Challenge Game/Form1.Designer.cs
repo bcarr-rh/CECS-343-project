@@ -1288,10 +1288,11 @@
             // roomsList
             // 
             this.roomsList.FormattingEnabled = true;
+            this.roomsList.ItemHeight = 31;
             this.roomsList.Location = new System.Drawing.Point(22, 258);
             this.roomsList.Margin = new System.Windows.Forms.Padding(8);
             this.roomsList.Name = "roomsList";
-            this.roomsList.Size = new System.Drawing.Size(339, 212);
+            this.roomsList.Size = new System.Drawing.Size(339, 190);
             this.roomsList.TabIndex = 5;
             this.roomsList.SelectedIndexChanged += new System.EventHandler(this.roomsList_SelectedIndexChanged);
             // 

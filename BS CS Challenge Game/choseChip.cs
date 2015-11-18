@@ -47,17 +47,17 @@ namespace BS_CS_Challenge_Game
             learningChipButton.Click += new System.EventHandler(learningChipButton_Click);
             craftChipButton.Click += new System.EventHandler(craftChipButton_Click);
             this.Controls.Add(lblMessage);
-            if(i == 1)
+            if(i == 0)
             {
-                this.Controls.Add(integrityChipButton);
+                integrityChipButton.Enabled = false;
             }
-            if(l == 1)
+            if(l == 0)
             {
-                this.Controls.Add(craftChipButton);
+                learningChipButton.Enabled = false;
             }
-            if(c == 1)
+            if(c == 0)
             {
-                this.Controls.Add(learningChipButton);
+                craftChipButton.Enabled = false;
             }
             this.Show();
         }
@@ -70,19 +70,22 @@ namespace BS_CS_Challenge_Game
         private void integrityChipButton_Click(object sender, EventArgs e)
         {
             choice = "1 Integrity Chip";
-            this.Close();
+            integrityChipButton.DialogResult = DialogResult.OK;
+            //this.Close();
         }
 
         private void craftChipButton_Click(object sender, EventArgs e)
         {
             choice = "1 Craft Chip";
-            this.Close();
+            craftChipButton.DialogResult = DialogResult.OK;
+            //this.Close();
         }
 
         private void learningChipButton_Click(object sender, EventArgs e)
         {
             choice = "1 Learning Chip";
-            this.Close();
+            learningChipButton.DialogResult = DialogResult.OK;
+            //this.Close();
         }
     }
 }

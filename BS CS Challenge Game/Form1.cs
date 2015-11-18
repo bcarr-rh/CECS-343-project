@@ -401,7 +401,6 @@ namespace BS_CS_Challenge_Game
 
         private void PlayCardButton_Click(object sender, EventArgs e)
         {
-            updatePointsDisplay();
             MoveButton.Enabled = true;
             PlayCardButton.Enabled = false;
             DrawCard.Enabled = true;
@@ -409,6 +408,8 @@ namespace BS_CS_Challenge_Game
             while (playerArray[0].getDisCard() > 0)
             {
                 PopupForm popup = new PopupForm();
+                //PictureBox discardPic = new PictureBox();
+                //popup.Controls.Add(discardPic);
                 popup.setHand(showCard, playerArray[0]);
                 DialogResult dg = popup.ShowDialog();
                 showCard = (CardInterface)popup.getCard();
@@ -431,7 +432,9 @@ namespace BS_CS_Challenge_Game
                 playerArray[0].addCard(temp);
                 deck.RemoveAt(deck.Count - 1);
             }
-
+            discardDeck.Add(showCard);
+            showCard = playerArray[0].getNextCard();
+            updatePointsDisplay();
         }
         private void updatePointsDisplay()
         {

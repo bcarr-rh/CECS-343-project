@@ -20,9 +20,10 @@ namespace BS_CS_Challenge_Game
 
             if (p.getCurrentRoom() == 18 || p.getCurrentRoom() == 0)
             {
-                choseChip chose = new choseChip(1, 1, 0, p);
-                p.addChipChosen(chose.getChoice());
-                return (p.getPlayerName() + " played " + thisImage + " for " + chose.getChoice());
+                choseChipForm chose = new choseChipForm(1, 1, 0, p);
+                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                string temp = chose.getChoice();
+                return (p.getPlayerName() + " played " + thisImage + " for " + temp);
             }
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
