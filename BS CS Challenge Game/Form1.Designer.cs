@@ -196,8 +196,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel2);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint_1);
-            this.splitContainer1.Size = new System.Drawing.Size(3385, 1832);
-            this.splitContainer1.SplitterDistance = 1117;
+            this.splitContainer1.Size = new System.Drawing.Size(3385, 1053);
+            this.splitContainer1.SplitterDistance = 642;
             this.splitContainer1.SplitterWidth = 10;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -1288,11 +1288,10 @@
             // roomsList
             // 
             this.roomsList.FormattingEnabled = true;
-            this.roomsList.ItemHeight = 31;
             this.roomsList.Location = new System.Drawing.Point(22, 258);
             this.roomsList.Margin = new System.Windows.Forms.Padding(8);
             this.roomsList.Name = "roomsList";
-            this.roomsList.Size = new System.Drawing.Size(339, 221);
+            this.roomsList.Size = new System.Drawing.Size(339, 212);
             this.roomsList.TabIndex = 5;
             this.roomsList.SelectedIndexChanged += new System.EventHandler(this.roomsList_SelectedIndexChanged);
             // 
@@ -1347,7 +1346,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(3385, 1832);
+            this.ClientSize = new System.Drawing.Size(3385, 1053);
             this.Controls.Add(this.splitContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -406,6 +406,31 @@ namespace BS_CS_Challenge_Game
             PlayCardButton.Enabled = false;
             DrawCard.Enabled = true;
             PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
+            while (playerArray[0].getDisCard() > 0)
+            {
+                PopupForm popup = new PopupForm();
+                popup.setHand(showCard, playerArray[0]);
+                DialogResult dg = popup.ShowDialog();
+                showCard = (CardInterface)popup.getCard();
+                discardDeck.Add(showCard);
+                showCard = playerArray[0].getNextCard();
+                playerArray[0].disCardmm();
+            }
+            while (playerArray[0].getIncCard() > 0)
+            {
+                if (deck.Count == 0)
+                {
+                    for (int i = 0; discardDeck.Count != 0; i++)
+                    {
+                        deck[i] = discardDeck[discardDeck.Count - 1];
+                        discardDeck.RemoveAt(discardDeck.Count - 1);
+                    }
+                    Shuffle();
+                }
+                CardInterface temp = deck[deck.Count - 1];
+                playerArray[0].addCard(temp);
+                deck.RemoveAt(deck.Count - 1);
+            }
 
         }
         private void updatePointsDisplay()
