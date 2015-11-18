@@ -15,6 +15,11 @@ namespace BS_CS_Challenge_Game
         int cChip;
         int iChip;
         int qPoint;
+
+        int incCard;
+        int disCard;
+
+
         public Player(String name, int room)
         {
             playerName = name;
@@ -23,6 +28,8 @@ namespace BS_CS_Challenge_Game
             cChip = 0;
             iChip = 0;
             qPoint = 0;
+            incCard = 0;
+            disCard = 0;
             hand = new LinkedList<CardInterface>();
 
         }
@@ -33,6 +40,32 @@ namespace BS_CS_Challenge_Game
             hand.RemoveFirst();
             return temp;
 
+        }
+
+        public CardInterface getNextCard()
+        {
+            CardInterface temp = hand.First();
+            hand.RemoveFirst();
+            return temp;
+        }
+
+        public int getIncCard()
+        {
+            return incCard;
+        }
+        public void incCardmm()
+        {
+            incCard--;
+        }
+
+        public int getDisCard()
+        {
+            return disCard;
+        }
+
+        public void disCardmm()
+        {
+            disCard--;
         }
         public void addCard(CardInterface c)
         {
@@ -47,19 +80,20 @@ namespace BS_CS_Challenge_Game
         public void addExtraCard()
         {
             //hand.AddFirst(null);
+            incCard++;
         }
         //TODO pick card to discard?
-        public CardInterface discardPick()
+        public void discardPick()
         {
-            return null;
+            disCard++;
         }
 
-        public CardInterface discard()
-        {
-            CardInterface c = hand.Last();
-            hand.RemoveLast();
-            return c;
-        }
+        //public CardInterface discard()
+        //{
+        //    CardInterface c = hand.Last();
+        //    hand.RemoveLast();
+        //    return c;
+        //}
 
 
         public int getLChip()
@@ -81,15 +115,15 @@ namespace BS_CS_Challenge_Game
 
         public void addChipChosen(string choice)
         {
-            if(choice.Equals("The Learning Chip"))
+            if(choice.Equals("1 Learning Chip"))
             {
                 lChip++;
             }
-            else if(choice.Equals("The Integrity Chip"))
+            else if(choice.Equals("1 Integrity Chip"))
             {
                 iChip++;
             }
-            else if(choice.Equals("The Craft Chip"))
+            else if(choice.Equals("1 Craft Chip"))
             {
                 cChip++;
             }

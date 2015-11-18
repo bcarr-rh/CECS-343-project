@@ -69,19 +69,19 @@ namespace BS_CS_Challenge_Game
 
         private void integrityChipButton_Click(object sender, EventArgs e)
         {
-            choice = "The Integrity Chip";
+            choice = "1 Integrity Chip";
             this.Close();
         }
 
         private void craftChipButton_Click(object sender, EventArgs e)
         {
-            choice = "The Craft Chip";
+            choice = "1 Craft Chip";
             this.Close();
         }
 
         private void learningChipButton_Click(object sender, EventArgs e)
         {
-            choice = "The Learning Chip";
+            choice = "1 Learning Chip";
             this.Close();
         }
     }
