@@ -300,12 +300,10 @@ namespace BS_CS_Challenge_Game
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
-
             moveCount++;
             try {
                 String Room = roomsList.SelectedItem.ToString();
                 foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
-
                 {
                     if (roomArray[s].getRoomName().Equals(Room))
                     {
@@ -409,10 +407,11 @@ namespace BS_CS_Challenge_Game
             pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
 
         }
-        //TODO if QP % 15 == 0 get a chip of choice
-        //TODO Add AI Move and Play
-        //TODO Monitor total QP for all players and if > 60 discard cards and add new ones
-        //TODO Before reset of cards discard human players hand and draw 5 of the new cards 
+        //TODO if QP % 15 == 0 get a chip of choice.
+        //TODO Add AI Move and Play.
+        //TODO Monitor total QP for all players and if > 60 discard cards and add new ones.
+        //TODO Before reset of cards discard human players hand and draw 5 of the new cards.
+        //TODO fix the move after card is done.
         private void PlayCardButton_Click(object sender, EventArgs e)
         {
             MoveButton.Enabled = true;
