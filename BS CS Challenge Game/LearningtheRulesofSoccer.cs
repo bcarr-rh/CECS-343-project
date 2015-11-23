@@ -24,6 +24,7 @@ namespace BS_CS_Challenge_Game
                 return (p.getPlayerName() + " played KIN 253" + thisImage + " for 2 craft chips");
             }
             p.setCurrentRoom(13);
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }

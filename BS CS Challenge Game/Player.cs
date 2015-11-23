@@ -24,10 +24,10 @@ namespace BS_CS_Challenge_Game
         {
             playerName = name;
             currentRoom = room;
-            lChip = 6;
-            cChip = 6;
-            iChip = 6;
-            qPoint = 6;
+            lChip = 0;
+            cChip = 0;
+            iChip = 0;
+            qPoint = 0;
             incCard = 0;
             disCard = 0;
             hand = new LinkedList<CardInterface>();

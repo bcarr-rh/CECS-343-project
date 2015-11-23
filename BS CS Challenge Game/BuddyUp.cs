@@ -25,6 +25,7 @@ namespace BS_CS_Challenge_Game
                 string temp = chose.getChoice();
                 return (p.getPlayerName() + " played " + thisImage + " for " + temp);
             }
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }

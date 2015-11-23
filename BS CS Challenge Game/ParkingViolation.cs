@@ -24,6 +24,7 @@ namespace BS_CS_Challenge_Game
                 p.discardPick();
                 return (p.getPlayerName() + " played " + thisImage + " for 2 learning chips");
             }
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }

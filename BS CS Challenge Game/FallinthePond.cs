@@ -25,6 +25,7 @@ namespace BS_CS_Challenge_Game
                 return (p.getPlayerName() + " played " + thisImage + " for 1 integrity chip and 1 craft chip");
             }
             p.setCurrentRoom(20);
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }

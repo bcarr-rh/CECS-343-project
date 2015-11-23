@@ -27,6 +27,7 @@ namespace BS_CS_Challenge_Game
                 return (p.getPlayerName() + " played " + thisImage + " for 3 Quality Points and " + temp);
             }
             p.discardPick();
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }

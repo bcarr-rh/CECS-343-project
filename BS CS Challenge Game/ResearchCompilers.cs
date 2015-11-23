@@ -23,6 +23,7 @@ namespace BS_CS_Challenge_Game
                 p.addLChip(1);
                 return (p.getPlayerName() + " played " + thisImage + " for 1 learning chip");
             }
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }
