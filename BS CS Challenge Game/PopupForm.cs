@@ -20,6 +20,12 @@ namespace BS_CS_Challenge_Game
             InitializeComponent();
             
         }
+        private void PopupForm_Load(object sender, EventArgs e)
+        {
+            showCard = HumanPlayer.getCard(showCard);
+            pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
+
+        }
         public void setHand(Object s, Object h)
         {
             showCard = (CardInterface)s;
@@ -35,9 +41,11 @@ namespace BS_CS_Challenge_Game
 
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             button1.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

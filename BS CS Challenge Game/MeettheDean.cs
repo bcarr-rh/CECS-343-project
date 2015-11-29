@@ -25,6 +25,7 @@ namespace BS_CS_Challenge_Game
                 return (p.getPlayerName() + " played " + thisImage + " for 5 Quality points and 1 game card");
             }
             p.discardPick();
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED: lose a card");
 
         }

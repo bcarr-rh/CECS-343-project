@@ -24,6 +24,7 @@ namespace BS_CS_Challenge_Game
                 p.setCurrentRoom(20);
                 return (p.getPlayerName() + " played " + thisImage + " for 1 crafting chip");
             }
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }
