@@ -45,7 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CardInterface.cs" />
+    <Compile Include="CECS201.cs" />
+    <Compile Include="CECS228.cs" />
+    <Compile Include="CECS274.cs" />
+    <Compile Include="CECS277.cs" />
+    <Compile Include="CECS282.cs" />
+    <Compile Include="CECS285.cs" />
     <Compile Include="choseChip.cs" />
+    <Compile Include="ENGL317.cs" />
+    <Compile Include="PHIL270.cs" />
+    <Compile Include="PHYS152.cs" />
     <Compile Include="TheOutpost.cs" />
     <Compile Include="TheBigGame.cs" />
     <Compile Include="StudentParking.cs" />
