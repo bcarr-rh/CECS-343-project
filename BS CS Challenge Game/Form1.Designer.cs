@@ -117,6 +117,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(8);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -195,8 +196,9 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel2);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint_1);
-            this.splitContainer1.Size = new System.Drawing.Size(1354, 733);
-            this.splitContainer1.SplitterDistance = 447;
+            this.splitContainer1.Size = new System.Drawing.Size(3385, 1832);
+            this.splitContainer1.SplitterDistance = 1117;
+            this.splitContainer1.SplitterWidth = 10;
             this.splitContainer1.TabIndex = 0;
             // 
             // button63
@@ -205,6 +207,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button63.Location = new System.Drawing.Point(42, 1094);
+            this.button63.Margin = new System.Windows.Forms.Padding(8);
             this.button63.MaximumSize = new System.Drawing.Size(75, 23);
             this.button63.MinimumSize = new System.Drawing.Size(75, 23);
             this.button63.Name = "button63";
@@ -220,6 +223,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button62.Location = new System.Drawing.Point(42, 1065);
+            this.button62.Margin = new System.Windows.Forms.Padding(8);
             this.button62.MaximumSize = new System.Drawing.Size(75, 23);
             this.button62.MinimumSize = new System.Drawing.Size(75, 23);
             this.button62.Name = "button62";
@@ -235,6 +239,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button61.Location = new System.Drawing.Point(42, 1035);
+            this.button61.Margin = new System.Windows.Forms.Padding(8);
             this.button61.MaximumSize = new System.Drawing.Size(75, 23);
             this.button61.MinimumSize = new System.Drawing.Size(75, 23);
             this.button61.Name = "button61";
@@ -251,6 +256,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button60.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button60.Location = new System.Drawing.Point(1300, 1782);
+            this.button60.Margin = new System.Windows.Forms.Padding(8);
             this.button60.MaximumSize = new System.Drawing.Size(75, 23);
             this.button60.MinimumSize = new System.Drawing.Size(75, 23);
             this.button60.Name = "button60";
@@ -267,6 +273,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button59.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button59.Location = new System.Drawing.Point(1300, 1752);
+            this.button59.Margin = new System.Windows.Forms.Padding(8);
             this.button59.MaximumSize = new System.Drawing.Size(75, 23);
             this.button59.MinimumSize = new System.Drawing.Size(75, 23);
             this.button59.Name = "button59";
@@ -283,6 +290,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button58.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button58.Location = new System.Drawing.Point(1300, 1722);
+            this.button58.Margin = new System.Windows.Forms.Padding(8);
             this.button58.MaximumSize = new System.Drawing.Size(75, 23);
             this.button58.MinimumSize = new System.Drawing.Size(75, 23);
             this.button58.Name = "button58";
@@ -299,6 +307,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button57.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button57.Location = new System.Drawing.Point(665, 1836);
+            this.button57.Margin = new System.Windows.Forms.Padding(8);
             this.button57.MaximumSize = new System.Drawing.Size(75, 23);
             this.button57.MinimumSize = new System.Drawing.Size(75, 23);
             this.button57.Name = "button57";
@@ -315,6 +324,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button56.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button56.Location = new System.Drawing.Point(665, 1806);
+            this.button56.Margin = new System.Windows.Forms.Padding(8);
             this.button56.MaximumSize = new System.Drawing.Size(75, 23);
             this.button56.MinimumSize = new System.Drawing.Size(75, 23);
             this.button56.Name = "button56";
@@ -331,6 +341,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button55.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button55.Location = new System.Drawing.Point(665, 1776);
+            this.button55.Margin = new System.Windows.Forms.Padding(8);
             this.button55.MaximumSize = new System.Drawing.Size(75, 23);
             this.button55.MinimumSize = new System.Drawing.Size(75, 23);
             this.button55.Name = "button55";
@@ -347,6 +358,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button54.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button54.Location = new System.Drawing.Point(191, 1790);
+            this.button54.Margin = new System.Windows.Forms.Padding(8);
             this.button54.MaximumSize = new System.Drawing.Size(75, 23);
             this.button54.MinimumSize = new System.Drawing.Size(75, 23);
             this.button54.Name = "button54";
@@ -363,6 +375,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button53.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button53.Location = new System.Drawing.Point(191, 1760);
+            this.button53.Margin = new System.Windows.Forms.Padding(8);
             this.button53.MaximumSize = new System.Drawing.Size(75, 23);
             this.button53.MinimumSize = new System.Drawing.Size(75, 23);
             this.button53.Name = "button53";
@@ -379,6 +392,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button52.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button52.Location = new System.Drawing.Point(191, 1730);
+            this.button52.Margin = new System.Windows.Forms.Padding(8);
             this.button52.MaximumSize = new System.Drawing.Size(75, 23);
             this.button52.MinimumSize = new System.Drawing.Size(75, 23);
             this.button52.Name = "button52";
@@ -394,6 +408,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button51.Location = new System.Drawing.Point(1507, 1216);
+            this.button51.Margin = new System.Windows.Forms.Padding(8);
             this.button51.MaximumSize = new System.Drawing.Size(75, 23);
             this.button51.MinimumSize = new System.Drawing.Size(75, 23);
             this.button51.Name = "button51";
@@ -409,6 +424,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button50.Location = new System.Drawing.Point(1507, 1186);
+            this.button50.Margin = new System.Windows.Forms.Padding(8);
             this.button50.MaximumSize = new System.Drawing.Size(75, 23);
             this.button50.MinimumSize = new System.Drawing.Size(75, 23);
             this.button50.Name = "button50";
@@ -424,6 +440,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button49.Location = new System.Drawing.Point(1507, 1156);
+            this.button49.Margin = new System.Windows.Forms.Padding(8);
             this.button49.MaximumSize = new System.Drawing.Size(75, 23);
             this.button49.MinimumSize = new System.Drawing.Size(75, 23);
             this.button49.Name = "button49";
@@ -439,6 +456,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button48.Location = new System.Drawing.Point(1271, 1469);
+            this.button48.Margin = new System.Windows.Forms.Padding(8);
             this.button48.MaximumSize = new System.Drawing.Size(75, 23);
             this.button48.MinimumSize = new System.Drawing.Size(75, 23);
             this.button48.Name = "button48";
@@ -454,6 +472,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button47.Location = new System.Drawing.Point(1271, 1439);
+            this.button47.Margin = new System.Windows.Forms.Padding(8);
             this.button47.MaximumSize = new System.Drawing.Size(75, 23);
             this.button47.MinimumSize = new System.Drawing.Size(75, 23);
             this.button47.Name = "button47";
@@ -469,6 +488,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button46.Location = new System.Drawing.Point(1271, 1409);
+            this.button46.Margin = new System.Windows.Forms.Padding(8);
             this.button46.MaximumSize = new System.Drawing.Size(75, 23);
             this.button46.MinimumSize = new System.Drawing.Size(75, 23);
             this.button46.Name = "button46";
@@ -484,6 +504,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button45.Location = new System.Drawing.Point(1030, 1469);
+            this.button45.Margin = new System.Windows.Forms.Padding(8);
             this.button45.MaximumSize = new System.Drawing.Size(75, 23);
             this.button45.MinimumSize = new System.Drawing.Size(75, 23);
             this.button45.Name = "button45";
@@ -499,6 +520,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button44.Location = new System.Drawing.Point(1030, 1439);
+            this.button44.Margin = new System.Windows.Forms.Padding(8);
             this.button44.MaximumSize = new System.Drawing.Size(75, 23);
             this.button44.MinimumSize = new System.Drawing.Size(75, 23);
             this.button44.Name = "button44";
@@ -514,6 +536,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button43.Location = new System.Drawing.Point(1030, 1409);
+            this.button43.Margin = new System.Windows.Forms.Padding(8);
             this.button43.MaximumSize = new System.Drawing.Size(75, 23);
             this.button43.MinimumSize = new System.Drawing.Size(75, 23);
             this.button43.Name = "button43";
@@ -529,6 +552,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button42.Location = new System.Drawing.Point(650, 1469);
+            this.button42.Margin = new System.Windows.Forms.Padding(8);
             this.button42.MaximumSize = new System.Drawing.Size(75, 23);
             this.button42.MinimumSize = new System.Drawing.Size(75, 23);
             this.button42.Name = "button42";
@@ -545,6 +569,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button41.Location = new System.Drawing.Point(650, 1439);
+            this.button41.Margin = new System.Windows.Forms.Padding(8);
             this.button41.MaximumSize = new System.Drawing.Size(75, 23);
             this.button41.MinimumSize = new System.Drawing.Size(75, 23);
             this.button41.Name = "button41";
@@ -561,6 +586,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button40.Location = new System.Drawing.Point(650, 1409);
+            this.button40.Margin = new System.Windows.Forms.Padding(8);
             this.button40.MaximumSize = new System.Drawing.Size(75, 23);
             this.button40.MinimumSize = new System.Drawing.Size(75, 23);
             this.button40.Name = "button40";
@@ -578,6 +604,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button39.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button39.Location = new System.Drawing.Point(341, 1469);
+            this.button39.Margin = new System.Windows.Forms.Padding(8);
             this.button39.MaximumSize = new System.Drawing.Size(75, 23);
             this.button39.MinimumSize = new System.Drawing.Size(75, 23);
             this.button39.Name = "button39";
@@ -594,6 +621,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button38.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button38.Location = new System.Drawing.Point(341, 1439);
+            this.button38.Margin = new System.Windows.Forms.Padding(8);
             this.button38.MaximumSize = new System.Drawing.Size(75, 23);
             this.button38.MinimumSize = new System.Drawing.Size(75, 23);
             this.button38.Name = "button38";
@@ -610,6 +638,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button37.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button37.Location = new System.Drawing.Point(341, 1409);
+            this.button37.Margin = new System.Windows.Forms.Padding(8);
             this.button37.MaximumSize = new System.Drawing.Size(75, 23);
             this.button37.MinimumSize = new System.Drawing.Size(75, 23);
             this.button37.Name = "button37";
@@ -625,6 +654,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button36.Location = new System.Drawing.Point(1079, 1216);
+            this.button36.Margin = new System.Windows.Forms.Padding(8);
             this.button36.MaximumSize = new System.Drawing.Size(75, 23);
             this.button36.MinimumSize = new System.Drawing.Size(75, 23);
             this.button36.Name = "button36";
@@ -640,6 +670,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button35.Location = new System.Drawing.Point(1079, 1186);
+            this.button35.Margin = new System.Windows.Forms.Padding(8);
             this.button35.MaximumSize = new System.Drawing.Size(75, 23);
             this.button35.MinimumSize = new System.Drawing.Size(75, 23);
             this.button35.Name = "button35";
@@ -655,6 +686,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button34.Location = new System.Drawing.Point(1079, 1156);
+            this.button34.Margin = new System.Windows.Forms.Padding(8);
             this.button34.MaximumSize = new System.Drawing.Size(75, 23);
             this.button34.MinimumSize = new System.Drawing.Size(75, 23);
             this.button34.Name = "button34";
@@ -670,6 +702,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button33.Location = new System.Drawing.Point(282, 1262);
+            this.button33.Margin = new System.Windows.Forms.Padding(8);
             this.button33.MaximumSize = new System.Drawing.Size(75, 23);
             this.button33.MinimumSize = new System.Drawing.Size(75, 23);
             this.button33.Name = "button33";
@@ -686,6 +719,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button32.Location = new System.Drawing.Point(282, 1232);
+            this.button32.Margin = new System.Windows.Forms.Padding(8);
             this.button32.MaximumSize = new System.Drawing.Size(75, 23);
             this.button32.MinimumSize = new System.Drawing.Size(75, 23);
             this.button32.Name = "button32";
@@ -702,6 +736,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button31.Location = new System.Drawing.Point(282, 1202);
+            this.button31.Margin = new System.Windows.Forms.Padding(8);
             this.button31.MaximumSize = new System.Drawing.Size(75, 23);
             this.button31.MinimumSize = new System.Drawing.Size(75, 23);
             this.button31.Name = "button31";
@@ -718,6 +753,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button30.Location = new System.Drawing.Point(1291, 992);
+            this.button30.Margin = new System.Windows.Forms.Padding(8);
             this.button30.MaximumSize = new System.Drawing.Size(75, 23);
             this.button30.MinimumSize = new System.Drawing.Size(75, 23);
             this.button30.Name = "button30";
@@ -733,6 +769,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button29.Location = new System.Drawing.Point(1291, 962);
+            this.button29.Margin = new System.Windows.Forms.Padding(8);
             this.button29.MaximumSize = new System.Drawing.Size(75, 23);
             this.button29.MinimumSize = new System.Drawing.Size(75, 23);
             this.button29.Name = "button29";
@@ -748,6 +785,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button28.Location = new System.Drawing.Point(1291, 932);
+            this.button28.Margin = new System.Windows.Forms.Padding(8);
             this.button28.MaximumSize = new System.Drawing.Size(75, 23);
             this.button28.MinimumSize = new System.Drawing.Size(75, 23);
             this.button28.Name = "button28";
@@ -763,6 +801,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button27.Location = new System.Drawing.Point(1079, 1030);
+            this.button27.Margin = new System.Windows.Forms.Padding(8);
             this.button27.MaximumSize = new System.Drawing.Size(75, 23);
             this.button27.MinimumSize = new System.Drawing.Size(75, 23);
             this.button27.Name = "button27";
@@ -778,6 +817,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button26.Location = new System.Drawing.Point(1079, 1001);
+            this.button26.Margin = new System.Windows.Forms.Padding(8);
             this.button26.MaximumSize = new System.Drawing.Size(75, 23);
             this.button26.MinimumSize = new System.Drawing.Size(75, 23);
             this.button26.Name = "button26";
@@ -793,6 +833,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button25.Location = new System.Drawing.Point(1079, 970);
+            this.button25.Margin = new System.Windows.Forms.Padding(8);
             this.button25.MaximumSize = new System.Drawing.Size(75, 23);
             this.button25.MinimumSize = new System.Drawing.Size(75, 23);
             this.button25.Name = "button25";
@@ -808,6 +849,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button24.Location = new System.Drawing.Point(774, 1030);
+            this.button24.Margin = new System.Windows.Forms.Padding(8);
             this.button24.MaximumSize = new System.Drawing.Size(75, 23);
             this.button24.MinimumSize = new System.Drawing.Size(75, 23);
             this.button24.Name = "button24";
@@ -823,6 +865,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button23.Location = new System.Drawing.Point(774, 1001);
+            this.button23.Margin = new System.Windows.Forms.Padding(8);
             this.button23.MaximumSize = new System.Drawing.Size(75, 23);
             this.button23.MinimumSize = new System.Drawing.Size(75, 23);
             this.button23.Name = "button23";
@@ -838,6 +881,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button22.Location = new System.Drawing.Point(774, 970);
+            this.button22.Margin = new System.Windows.Forms.Padding(8);
             this.button22.MaximumSize = new System.Drawing.Size(75, 23);
             this.button22.MinimumSize = new System.Drawing.Size(75, 23);
             this.button22.Name = "button22";
@@ -853,6 +897,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button21.Location = new System.Drawing.Point(323, 1030);
+            this.button21.Margin = new System.Windows.Forms.Padding(8);
             this.button21.MaximumSize = new System.Drawing.Size(75, 23);
             this.button21.MinimumSize = new System.Drawing.Size(75, 23);
             this.button21.Name = "button21";
@@ -868,6 +913,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button20.Location = new System.Drawing.Point(323, 1000);
+            this.button20.Margin = new System.Windows.Forms.Padding(8);
             this.button20.MaximumSize = new System.Drawing.Size(75, 23);
             this.button20.MinimumSize = new System.Drawing.Size(75, 23);
             this.button20.Name = "button20";
@@ -883,6 +929,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button19.Location = new System.Drawing.Point(323, 970);
+            this.button19.Margin = new System.Windows.Forms.Padding(8);
             this.button19.MaximumSize = new System.Drawing.Size(75, 23);
             this.button19.MinimumSize = new System.Drawing.Size(75, 23);
             this.button19.Name = "button19";
@@ -898,6 +945,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button18.Location = new System.Drawing.Point(1355, 668);
+            this.button18.Margin = new System.Windows.Forms.Padding(8);
             this.button18.MaximumSize = new System.Drawing.Size(75, 23);
             this.button18.MinimumSize = new System.Drawing.Size(75, 23);
             this.button18.Name = "button18";
@@ -913,6 +961,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button17.Location = new System.Drawing.Point(1355, 638);
+            this.button17.Margin = new System.Windows.Forms.Padding(8);
             this.button17.MaximumSize = new System.Drawing.Size(75, 23);
             this.button17.MinimumSize = new System.Drawing.Size(75, 23);
             this.button17.Name = "button17";
@@ -928,6 +977,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button16.Location = new System.Drawing.Point(1355, 608);
+            this.button16.Margin = new System.Windows.Forms.Padding(8);
             this.button16.MaximumSize = new System.Drawing.Size(75, 23);
             this.button16.MinimumSize = new System.Drawing.Size(75, 23);
             this.button16.Name = "button16";
@@ -943,6 +993,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button15.Location = new System.Drawing.Point(640, 714);
+            this.button15.Margin = new System.Windows.Forms.Padding(8);
             this.button15.MaximumSize = new System.Drawing.Size(75, 23);
             this.button15.MinimumSize = new System.Drawing.Size(75, 23);
             this.button15.Name = "button15";
@@ -958,6 +1009,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button14.Location = new System.Drawing.Point(640, 684);
+            this.button14.Margin = new System.Windows.Forms.Padding(8);
             this.button14.MaximumSize = new System.Drawing.Size(75, 23);
             this.button14.MinimumSize = new System.Drawing.Size(75, 23);
             this.button14.Name = "button14";
@@ -973,6 +1025,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button13.Location = new System.Drawing.Point(640, 654);
+            this.button13.Margin = new System.Windows.Forms.Padding(8);
             this.button13.MaximumSize = new System.Drawing.Size(75, 23);
             this.button13.MinimumSize = new System.Drawing.Size(75, 23);
             this.button13.Name = "button13";
@@ -988,6 +1041,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button12.Location = new System.Drawing.Point(597, 395);
+            this.button12.Margin = new System.Windows.Forms.Padding(8);
             this.button12.MaximumSize = new System.Drawing.Size(75, 23);
             this.button12.MinimumSize = new System.Drawing.Size(75, 23);
             this.button12.Name = "button12";
@@ -1003,6 +1057,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button11.Location = new System.Drawing.Point(597, 365);
+            this.button11.Margin = new System.Windows.Forms.Padding(8);
             this.button11.MaximumSize = new System.Drawing.Size(75, 23);
             this.button11.MinimumSize = new System.Drawing.Size(75, 23);
             this.button11.Name = "button11";
@@ -1018,6 +1073,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.Location = new System.Drawing.Point(597, 335);
+            this.button10.Margin = new System.Windows.Forms.Padding(8);
             this.button10.MaximumSize = new System.Drawing.Size(75, 23);
             this.button10.MinimumSize = new System.Drawing.Size(75, 23);
             this.button10.Name = "button10";
@@ -1033,6 +1089,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button9.Location = new System.Drawing.Point(1147, 228);
+            this.button9.Margin = new System.Windows.Forms.Padding(8);
             this.button9.MaximumSize = new System.Drawing.Size(75, 23);
             this.button9.MinimumSize = new System.Drawing.Size(75, 23);
             this.button9.Name = "button9";
@@ -1048,6 +1105,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button8.Location = new System.Drawing.Point(1147, 198);
+            this.button8.Margin = new System.Windows.Forms.Padding(8);
             this.button8.MaximumSize = new System.Drawing.Size(75, 23);
             this.button8.MinimumSize = new System.Drawing.Size(75, 23);
             this.button8.Name = "button8";
@@ -1063,6 +1121,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button7.Location = new System.Drawing.Point(1147, 167);
+            this.button7.Margin = new System.Windows.Forms.Padding(8);
             this.button7.MaximumSize = new System.Drawing.Size(75, 23);
             this.button7.MinimumSize = new System.Drawing.Size(75, 23);
             this.button7.Name = "button7";
@@ -1078,6 +1137,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.Location = new System.Drawing.Point(436, 97);
+            this.button6.Margin = new System.Windows.Forms.Padding(8);
             this.button6.MaximumSize = new System.Drawing.Size(75, 23);
             this.button6.MinimumSize = new System.Drawing.Size(75, 23);
             this.button6.Name = "button6";
@@ -1093,6 +1153,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Location = new System.Drawing.Point(436, 68);
+            this.button5.Margin = new System.Windows.Forms.Padding(8);
             this.button5.MaximumSize = new System.Drawing.Size(75, 23);
             this.button5.MinimumSize = new System.Drawing.Size(75, 23);
             this.button5.Name = "button5";
@@ -1108,6 +1169,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Location = new System.Drawing.Point(436, 39);
+            this.button4.Margin = new System.Windows.Forms.Padding(8);
             this.button4.MaximumSize = new System.Drawing.Size(75, 23);
             this.button4.MinimumSize = new System.Drawing.Size(75, 23);
             this.button4.Name = "button4";
@@ -1124,6 +1186,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Location = new System.Drawing.Point(146, 318);
+            this.button3.Margin = new System.Windows.Forms.Padding(8);
             this.button3.MaximumSize = new System.Drawing.Size(75, 23);
             this.button3.MinimumSize = new System.Drawing.Size(75, 23);
             this.button3.Name = "button3";
@@ -1139,6 +1202,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(146, 288);
+            this.button2.Margin = new System.Windows.Forms.Padding(8);
             this.button2.MaximumSize = new System.Drawing.Size(75, 23);
             this.button2.MinimumSize = new System.Drawing.Size(75, 23);
             this.button2.Name = "button2";
@@ -1154,6 +1218,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(146, 258);
+            this.button1.Margin = new System.Windows.Forms.Padding(8);
             this.button1.MaximumSize = new System.Drawing.Size(75, 23);
             this.button1.MinimumSize = new System.Drawing.Size(75, 23);
             this.button1.Name = "button1";
@@ -1169,8 +1234,9 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1670, 2000);
+            this.pictureBox1.Size = new System.Drawing.Size(4175, 5000);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
@@ -1179,27 +1245,30 @@
             // 
             this.panel2.Controls.Add(this.PlayerIndicator);
             this.panel2.Controls.Add(this.PointsDisplay);
-            this.panel2.Location = new System.Drawing.Point(341, 4);
+            this.panel2.Location = new System.Drawing.Point(852, 10);
+            this.panel2.Margin = new System.Windows.Forms.Padding(8);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1010, 212);
+            this.panel2.Size = new System.Drawing.Size(2525, 530);
             this.panel2.TabIndex = 1;
             // 
             // PlayerIndicator
             // 
-            this.PlayerIndicator.Location = new System.Drawing.Point(4, 138);
+            this.PlayerIndicator.Location = new System.Drawing.Point(10, 345);
+            this.PlayerIndicator.Margin = new System.Windows.Forms.Padding(8);
             this.PlayerIndicator.Multiline = true;
             this.PlayerIndicator.Name = "PlayerIndicator";
             this.PlayerIndicator.ReadOnly = true;
-            this.PlayerIndicator.Size = new System.Drawing.Size(1003, 65);
+            this.PlayerIndicator.Size = new System.Drawing.Size(2502, 156);
             this.PlayerIndicator.TabIndex = 1;
             // 
             // PointsDisplay
             // 
-            this.PointsDisplay.Location = new System.Drawing.Point(4, 4);
+            this.PointsDisplay.Location = new System.Drawing.Point(10, 10);
+            this.PointsDisplay.Margin = new System.Windows.Forms.Padding(8);
             this.PointsDisplay.Multiline = true;
             this.PointsDisplay.Name = "PointsDisplay";
             this.PointsDisplay.ReadOnly = true;
-            this.PointsDisplay.Size = new System.Drawing.Size(1003, 128);
+            this.PointsDisplay.Size = new System.Drawing.Size(2502, 314);
             this.PointsDisplay.TabIndex = 0;
             // 
             // panel1
@@ -1210,46 +1279,51 @@
             this.panel1.Controls.Add(this.PlayCardButton);
             this.panel1.Controls.Add(this.MoveButton);
             this.panel1.Controls.Add(this.DrawCard);
-            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Location = new System.Drawing.Point(10, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(330, 212);
+            this.panel1.Size = new System.Drawing.Size(825, 530);
             this.panel1.TabIndex = 0;
             // 
             // roomsList
             // 
             this.roomsList.FormattingEnabled = true;
-            this.roomsList.Items.AddRange(new object[] {
-            "ECS 308",
-            "Room of Retirement"});
-            this.roomsList.Location = new System.Drawing.Point(9, 103);
+            this.roomsList.ItemHeight = 31;
+            this.roomsList.Location = new System.Drawing.Point(22, 258);
+            this.roomsList.Margin = new System.Windows.Forms.Padding(8);
             this.roomsList.Name = "roomsList";
-            this.roomsList.Size = new System.Drawing.Size(138, 95);
+            this.roomsList.Size = new System.Drawing.Size(339, 221);
             this.roomsList.TabIndex = 5;
             this.roomsList.SelectedIndexChanged += new System.EventHandler(this.roomsList_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox2.Location = new System.Drawing.Point(157, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(392, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(8);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(173, 190);
+            this.pictureBox2.Size = new System.Drawing.Size(432, 475);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // PlayCardButton
             // 
-            this.PlayCardButton.Location = new System.Drawing.Point(9, 73);
+            this.PlayCardButton.Location = new System.Drawing.Point(22, 182);
+            this.PlayCardButton.Margin = new System.Windows.Forms.Padding(8);
             this.PlayCardButton.Name = "PlayCardButton";
-            this.PlayCardButton.Size = new System.Drawing.Size(75, 23);
+            this.PlayCardButton.Size = new System.Drawing.Size(188, 58);
             this.PlayCardButton.TabIndex = 2;
             this.PlayCardButton.Text = "Play Card";
             this.PlayCardButton.UseVisualStyleBackColor = true;
+            this.PlayCardButton.Click += new System.EventHandler(this.PlayCardButton_Click);
             // 
             // MoveButton
             // 
-            this.MoveButton.Location = new System.Drawing.Point(9, 43);
+            this.MoveButton.Location = new System.Drawing.Point(22, 108);
+            this.MoveButton.Margin = new System.Windows.Forms.Padding(8);
             this.MoveButton.Name = "MoveButton";
-            this.MoveButton.Size = new System.Drawing.Size(75, 23);
+            this.MoveButton.Size = new System.Drawing.Size(188, 58);
             this.MoveButton.TabIndex = 1;
             this.MoveButton.Text = "Move";
             this.MoveButton.UseVisualStyleBackColor = true;
@@ -1257,9 +1331,10 @@
             // 
             // DrawCard
             // 
-            this.DrawCard.Location = new System.Drawing.Point(9, 13);
+            this.DrawCard.Location = new System.Drawing.Point(22, 32);
+            this.DrawCard.Margin = new System.Windows.Forms.Padding(8);
             this.DrawCard.Name = "DrawCard";
-            this.DrawCard.Size = new System.Drawing.Size(75, 23);
+            this.DrawCard.Size = new System.Drawing.Size(188, 58);
             this.DrawCard.TabIndex = 0;
             this.DrawCard.Text = "Draw Card";
             this.DrawCard.UseVisualStyleBackColor = true;
@@ -1268,16 +1343,16 @@
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.ClientSize = new System.Drawing.Size(3385, 1832);
             this.Controls.Add(this.splitContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "Form1";
             this.Text = "BS CS Challenge Game";
             this.Load += new System.EventHandler(this.Form1_Load);

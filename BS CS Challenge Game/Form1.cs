@@ -15,6 +15,10 @@ namespace BS_CS_Challenge_Game
         
         private Room[] roomArray;
         private Player[] playerArray;
+        private List<CardInterface> deck;
+        private List<CardInterface> discardDeck;
+        private int moveCount;
+        private CardInterface showCard;
 
         public Form1()
         {
@@ -24,6 +28,9 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            MoveButton.Enabled = false;
+            deck =  new List<CardInterface>();
+            discardDeck =  new List<CardInterface>();
             roomArray = new Room[21];
             playerArray = new Player[3];
             /**
@@ -51,7 +58,6 @@ namespace BS_CS_Challenge_Game
                 playerArray[n] = playerArray[k];
                 playerArray[k] = temp;
             }
-
             roomArray[0] = new Room("George Allen Field",0, button1, button2, button3);
             roomArray[1] = new Room("Japanese Garden",1, button6, button5, button4);
             roomArray[2] = new Room("Student Parking",2, button9, button8, button7);
@@ -132,6 +138,58 @@ namespace BS_CS_Challenge_Game
             roomArray[18].addNextTo(15);
             roomArray[19].addNextTo(15);
             roomArray[20].addNextTo(15);
+            deck.Add(new EnjoyingNature());
+            deck.Add(new EnjoyingThePeace());
+            deck.Add(new ANewLaptop());
+            deck.Add(new BuddyUp());
+            deck.Add(new CECS100());
+            deck.Add(new CECS105());
+            deck.Add(new CECS174());
+            deck.Add(new CHEM111());
+            deck.Add(new ChoosingaMajor());
+            deck.Add(new ElectiveClass());
+            deck.Add(new ExcercisingMindandBody());
+            deck.Add(new FallinthePond());
+            deck.Add(new FindingtheLab());
+            deck.Add(new GoodbyeProfessor());
+            deck.Add(new LateforClass());
+            deck.Add(new LearningLinux());
+            deck.Add(new LearningNetbeans());
+            deck.Add(new LearningtheRulesofSoccer());
+            deck.Add(new LoudBuzzing());
+            deck.Add(new LunchatBratwurstHall());
+            deck.Add(new MakeaFriend());
+            deck.Add(new MaketheDeansList());
+            deck.Add(new Math122());
+            deck.Add(new Math123());
+            deck.Add(new MeettheDean());
+            deck.Add(new OralCommunication());
+            deck.Add(new ParkingViolation());
+            deck.Add(new PassSoccerClass());
+            deck.Add(new Physics151());
+            deck.Add(new PresstheRightFloor());
+            deck.Add(new ProfessorEnglert());
+            deck.Add(new ProfessorHoffman());
+            deck.Add(new ProgramCrashes());
+            deck.Add(new ResearchCompilers());
+            deck.Add(new ScoreaGoal());
+            deck.Add(new SoccerGoalie());
+            deck.Add(new StudentParking());
+            deck.Add(new TheBigGame());
+            deck.Add(new TheOutpost());
+            Shuffle();
+            PlayCardButton.Enabled = false;
+            moveCount = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                playerArray[0].addCard(deck[deck.Count - 1]);
+                deck.RemoveAt(deck.Count - 1);
+            }
+            showCard = deck[deck.Count - 1];
+            deck.RemoveAt(deck.Count - 1);
+            pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            updatePointsDisplay();
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
@@ -141,6 +199,8 @@ namespace BS_CS_Challenge_Game
             roomArray[playerArray[1].getCurrentRoom()].MoveTo(playerArray[1].getPlayerName());
             roomArray[playerArray[2].getCurrentRoom()].MoveTo(playerArray[2].getPlayerName());
             PlayerIndicator.Text = "Human player is " + playerArray[0].getPlayerName();
+            
+
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -170,8 +230,17 @@ namespace BS_CS_Challenge_Game
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
             
-
+            roomsList.Items.Clear();
+            foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
+            {
+                roomsList.Items.Add(roomArray[s].getRoomName());
+            }
+            roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
+            roomArray[playerArray[1].getCurrentRoom()].MoveTo(playerArray[1].getPlayerName());
+            roomArray[playerArray[2].getCurrentRoom()].MoveTo(playerArray[2].getPlayerName());
+            PlayerIndicator.Text = "Human player is " + playerArray[0].getPlayerName();
         }
+
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
@@ -180,7 +249,7 @@ namespace BS_CS_Challenge_Game
 
         private void splitContainer1_Panel2_Paint_1(object sender, PaintEventArgs e)
         {
-
+         
         }
 
         private void splitContainer1_Panel1_Paint_1(object sender, PaintEventArgs e)
@@ -197,17 +266,35 @@ namespace BS_CS_Challenge_Game
         {
 
         }
-
+        // DRAW CARD BUTTON
         private void DrawCard_Click(object sender, EventArgs e)
         {
+            DrawCard.Enabled = false;
+            if (deck.Count == 0)
+            {
+                for (int i = 0; discardDeck.Count != 0;i++)
+                {
+                    deck[i] = discardDeck[discardDeck.Count - 1];
+                    discardDeck.RemoveAt(discardDeck.Count - 1);
+                }
+                Shuffle();
+            }
+            CardInterface temp = deck[deck.Count - 1];
+            playerArray[0].addCard(temp);
+            deck.RemoveAt(deck.Count - 1);
+            PlayCardButton.Enabled = true;
+            
 
         }
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
+
+            moveCount++;
             try {
                 String Room = roomsList.SelectedItem.ToString();
                 foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
+
                 {
                     if (roomArray[s].getRoomName().Equals(Room))
                     {
@@ -242,6 +329,13 @@ namespace BS_CS_Challenge_Game
             {
                 roomsList.Items.Add(roomArray[s].getRoomName());
             }
+
+            if (moveCount == 3)
+            {
+                MoveButton.Enabled = false;
+            }
+            updatePointsDisplay();
+
             MoveButton.Enabled = false;
         }
 
@@ -278,6 +372,52 @@ namespace BS_CS_Challenge_Game
         private void button33_Click(object sender, EventArgs e)
         {
 
+
+            //String Room = roomsList.SelectedItem.ToString();
+           // playerArray[0];
+
+        }
+
+        public  void Shuffle()
+        {
+            Random rng = new Random();
+            int n = deck.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                CardInterface value = deck[k];
+                deck[k] = deck[n];
+                deck[n] = value;
+            }
+        }
+        //show next card
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            showCard = playerArray[0].getCard(showCard);
+            pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
+
+        }
+
+        private void PlayCardButton_Click(object sender, EventArgs e)
+        {
+            updatePointsDisplay();
+            MoveButton.Enabled = true;
+            PlayCardButton.Enabled = false;
+            DrawCard.Enabled = true;
+            PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
+
+        }
+        private void updatePointsDisplay()
+        {
+            string[] lines = new string[6];
+            lines[0] = playerArray[0].getPlayerName() + " Learning: " + playerArray[0].getLChip() + " Craft: " + playerArray[0].getCChip() + " Integrity: " + playerArray[0].getIChip() + " Quality: " + playerArray[0].getQPoint();
+            lines[1] = playerArray[1].getPlayerName() + " Learning: " + playerArray[1].getLChip() + " Craft: " + playerArray[1].getCChip() + " Integrity: " + playerArray[1].getIChip() + " Quality: " + playerArray[1].getQPoint();
+            lines[2] = playerArray[2].getPlayerName() + " Learning: " + playerArray[2].getLChip() + " Craft: " + playerArray[2].getCChip() + " Integrity: " + playerArray[2].getIChip() + " Quality: " + playerArray[2].getQPoint();
+            lines[3] = "Cards in Deck: " + deck.Count;
+            lines[4] = "Discards out of play: " + discardDeck.Count;
+            lines[5] = playerArray[0].getPlayerName() + " " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
+            PointsDisplay.Lines = lines;
         }
 
         private void button4_Click_1(object sender, EventArgs e)
