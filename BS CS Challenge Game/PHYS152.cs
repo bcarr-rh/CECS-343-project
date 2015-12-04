@@ -22,11 +22,11 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            /*if (p.getCurrentRoom() == 14)
+            if (p.getCurrentRoom() == 17)
             {
-                p.addLChip(1);
-                return (p.getPlayerName() + " played Professor Murgolo's CECS 174 Class for 1 learning chip");
-            }*/
+                p.addIChip(3);
+                return (p.getPlayerName() + " played PHYS 152 Class for 3 Integrity chips");
+            }
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }

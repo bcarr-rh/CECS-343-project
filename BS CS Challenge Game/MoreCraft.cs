@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BS_CS_Challenge_Game
 {
-    class PHIL270 : CardInterface
+    class MoreCraft : CardInterface
     {
         private string thisImage;
 
-        public PHIL270()
+        public MoreCraft()
         {
-            thisImage = "PHIL270";
+            thisImage = "MoreCraft";
         }
 
         public override string getImage()
@@ -22,12 +22,8 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 19)
-            {
-                p.addIChip(3);
-                return (p.getPlayerName() + " played PHIL 270 Class for 3 Integrity Chip");
-            }
-            return (p.getPlayerName() + " played " + thisImage + " FAILED");
+            p.addCChip(10);
+            return (p.getPlayerName() + " played More Craft Card for 10 Craft chips");  
         }
     }
 }
