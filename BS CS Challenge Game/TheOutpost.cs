@@ -29,12 +29,17 @@ namespace BS_CS_Challenge_Game
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }
-
-
-
         public override string getImage()
         {
             return thisImage;
+        }
+        public override bool DicardThisCard()
+        {
+            return false;
+        }
+        public override bool Check(Player p)
+        {
+            return (p.getCurrentRoom() < 10 && p.getCurrentRoom() != 6);
         }
     }
 }

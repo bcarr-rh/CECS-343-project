@@ -16,7 +16,7 @@ namespace BS_CS_Challenge_Game
         private Button button1;
         private Button button2;
         private Button button3;
-        private LinkedList<int> nextTo;
+        private List<int> nextTo;
         public Room(String n, int r, Button b1, Button b2, Button b3)
         {
             name = n;
@@ -24,7 +24,7 @@ namespace BS_CS_Challenge_Game
             button1 = b1;
             button2 = b2;
             button3 = b3;
-            nextTo = new LinkedList<int>();
+            nextTo = new List<int>();
         }
         public int getRoomNum()
         {
@@ -33,18 +33,22 @@ namespace BS_CS_Challenge_Game
         public String getRoomName()
         {
             return name;
-        }
+        } 
 
         public void addNextTo(int  r)
         {
-            nextTo.AddLast(r);
+            nextTo.Add(r);
         }
-        public LinkedList<int> getNextTo()
+        public List<int> getNextTo()
         {
             return nextTo;
         }
         public void MoveTo(String playerName)
         {
+            if((button1.Text.Equals(playerName) && button1.Visible.Equals(true)) || (button2.Text.Equals(playerName) && button2.Visible.Equals(true)) || (button3.Text.Equals(playerName) && button3.Visible.Equals(true)) )
+            {
+                return;
+            }
             if (button1.Visible.Equals(false))
             {
                 button1.Text = playerName;
