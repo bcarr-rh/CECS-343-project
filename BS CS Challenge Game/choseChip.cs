@@ -17,6 +17,11 @@ namespace BS_CS_Challenge_Game
         //will take in the data and make a person chose the available chips and update choice with the decision
         public choseChip(int l, int c, int i, Player p)
         {
+            if (p.getAi())
+            {
+                p.addLChip(l);
+                this.Close();
+            }
             choice = "";
             lblMessage = new Label();
             integrityChipButton = new Button();

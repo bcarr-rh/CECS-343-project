@@ -19,6 +19,7 @@ namespace BS_CS_Challenge_Game
         private List<CardInterface> discardDeck;
         private int moveCount;
         private CardInterface showCard;
+        private bool SophmoreCheck;
 
         public Form1()
         {
@@ -28,6 +29,7 @@ namespace BS_CS_Challenge_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SophmoreCheck = false;
             MoveButton.Enabled = false;
             deck =  new List<CardInterface>();
             discardDeck =  new List<CardInterface>();
@@ -210,7 +212,11 @@ namespace BS_CS_Challenge_Game
             roomArray[playerArray[1].getCurrentRoom()].MoveTo(playerArray[1].getPlayerName());
             roomArray[playerArray[2].getCurrentRoom()].MoveTo(playerArray[2].getPlayerName());
             PlayerIndicator.Text = "Human player is " + playerArray[0].getPlayerName();
-            
+
+            playerArray[0].setAi(false);
+            playerArray[1].setAi(true);
+            playerArray[2].setAi(true);
+
 
         }
 
@@ -321,17 +327,43 @@ namespace BS_CS_Challenge_Game
             //AI LOGIC
             Random rnd = new Random();
             //AI One
-            roomArray[playerArray[1].getCurrentRoom()].MoveOut(playerArray[1].getPlayerName());
-            int ai1RndSize = roomArray[playerArray[1].getCurrentRoom()].getNextTo().Count() - 1;
-            int ai1 = roomArray[playerArray[1].getCurrentRoom()].getNextTo().First();
-            playerArray[1].setCurrentRoom(roomArray[ai1].getRoomNum());
-            roomArray[ai1].MoveTo(playerArray[1].getPlayerName());
+            for (int i = 0; i < 3; i++)
+            {
+                roomArray[playerArray[1].getCurrentRoom()].MoveOut(playerArray[1].getPlayerName());
+                int ai1RndSize = roomArray[playerArray[1].getCurrentRoom()].getNextTo().Count() - 1;
+                int ai1 = roomArray[playerArray[1].getCurrentRoom()].getNextTo()[rnd.Next(0, ai1RndSize)];
+                playerArray[1].setCurrentRoom(roomArray[ai1].getRoomNum());
+                roomArray[ai1].MoveTo(playerArray[1].getPlayerName());
+                foreach (CardInterface c in deck)
+                {
+                    if (c.Check(playerArray[1]))
+                    {
+                        PlayerIndicator.Lines = new string[] { c.Play(playerArray[1]) };
+                        i = 3;
+                        break;
+                    }
+                }
+            }
             //AI two
-            roomArray[playerArray[2].getCurrentRoom()].MoveOut(playerArray[2].getPlayerName());
-            int ai2RndSize = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Count() - 1;
-            int ai2 = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Last();
-            playerArray[2].setCurrentRoom(roomArray[ai2].getRoomNum());
-            roomArray[ai2].MoveTo(playerArray[2].getPlayerName());
+            for (int i = 0; i < 3; i++)
+            {
+                roomArray[playerArray[2].getCurrentRoom()].MoveOut(playerArray[2].getPlayerName());
+                int ai2RndSize = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Count() - 1;
+                int ai2 = roomArray[playerArray[2].getCurrentRoom()].getNextTo()[rnd.Next(0, ai2RndSize)];
+                playerArray[2].setCurrentRoom(roomArray[ai2].getRoomNum());
+                roomArray[ai2].MoveTo(playerArray[2].getPlayerName());
+                foreach (CardInterface c in deck)
+                {
+                    if(c.Check(playerArray[2]))
+                    {
+                        PlayerIndicator.Lines = new string[] { c.Play(playerArray[2]) };
+                        discardDeck.Add(c);
+                        deck.Remove(c);
+                        i = 3;
+                        break;
+                    }
+                }
+            }
             //reset roomsList
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
@@ -407,18 +439,22 @@ namespace BS_CS_Challenge_Game
             pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
 
         }
-        //TODO if QP % 15 == 0 get a chip of choice.
-        //TODO Add AI Move and Play.
-        //TODO Monitor total QP for all players and if > 60 discard cards and add new ones.
-        //TODO Before reset of cards discard human players hand and draw 5 of the new cards.
-        //TODO fix the move after card is done.
+        //DONE: TODO if QP % 15 == 0 get a chip of choice.
+        //DONE: TODO Add AI Move and Play. 
+        //TODO  Monitor total QP for all players and if > 60 discard cards and add new ones.
+        //DONE: TODO Before reset of cards discard human players hand and draw 5 of the new cards.
+        //DONE: TODO fix the move after card is done.
         private void PlayCardButton_Click(object sender, EventArgs e)
         {
             MoveButton.Enabled = true;
             PlayCardButton.Enabled = false;
             DrawCard.Enabled = true;
             PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
-
+            // if QP % 15 == 0 get a chip of choice.
+            if (playerArray[0].getQPoint() % 15 == 0)
+            {
+                choseChipForm chose = new choseChipForm(1, 1, 1, playerArray[0]);
+            }
             //discard cards
             while (playerArray[0].getDisCard() > 0)
             {
@@ -473,6 +509,34 @@ namespace BS_CS_Challenge_Game
                 showCard = playerArray[0].getNextCard();
                 playerArray[0].disCardmm();
             }
+            if (!SophmoreCheck && playerArray[0].getQPoint() + playerArray[1].getQPoint() + playerArray[2].getQPoint() > 60)
+            {
+                SophmoreCheck = true;
+                for (int i = 0; discardDeck.Count != 0; i++)
+                {
+                    deck.Add(discardDeck[discardDeck.Count - 1]);
+                    discardDeck.RemoveAt(discardDeck.Count - 1);
+                }
+                deck.Add(showCard);
+                while(playerArray[0].handSize() > 0)
+                {
+                    deck.Add(playerArray[0].getNextCard());
+                }
+                foreach(CardInterface c in deck)
+                {
+                    if (c.DicardThisCard())
+                    {
+                        deck.Remove(c);
+                    }
+                }
+                //TODO
+                //ADD ALL NEW CARDS TO DECK HERE FOR SOPHMORE
+            }
+            //TODO fix the move after card is done.
+            //teleport after play card fix
+            roomArray[playerArray[0].lastRoom].MoveOut(playerArray[0].getPlayerName());
+            roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
+
             updatePointsDisplay();
         }
 

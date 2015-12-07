@@ -31,5 +31,13 @@ namespace BS_CS_Challenge_Game
         {
             return thisImage;
         }
+        public override bool DicardThisCard()
+        {
+            return false;
+        }
+        public override bool Check(Player p)
+        {
+            return (p.getCurrentRoom() == 16);
+        }
     }
 }

@@ -9,12 +9,14 @@ namespace BS_CS_Challenge_Game
     class Player
     {
         String playerName;
-        LinkedList<CardInterface> hand;
+        List<CardInterface> hand;
         int currentRoom;
+        public int lastRoom;
         int lChip;
         int cChip;
         int iChip;
         int qPoint;
+        bool ai;
 
         int incCard;
         int disCard;
@@ -30,14 +32,22 @@ namespace BS_CS_Challenge_Game
             qPoint = 0;
             incCard = 0;
             disCard = 0;
-            hand = new LinkedList<CardInterface>();
+            hand = new List<CardInterface>();
 
+        }
+        public void setAi(bool b)
+        {
+            ai = b;
+        }
+        public bool getAi()
+        {
+            return ai;
         }
         public CardInterface getCard(CardInterface c)
         {
-            hand.AddLast(c);
+            hand.Add(c);
             CardInterface temp = hand.First();
-            hand.RemoveFirst();
+            hand.Remove(temp);
             return temp;
 
         }
@@ -45,7 +55,7 @@ namespace BS_CS_Challenge_Game
         public CardInterface getNextCard()
         {
             CardInterface temp = hand.First();
-            hand.RemoveFirst();
+            hand.Remove(temp);
             return temp;
         }
 
@@ -69,7 +79,7 @@ namespace BS_CS_Challenge_Game
         }
         public void addCard(CardInterface c)
         {
-            hand.AddFirst(c);
+            hand.Add(c);
         }
 
         public int handSize()
@@ -148,6 +158,7 @@ namespace BS_CS_Challenge_Game
 
         public void setCurrentRoom(int room)
         {
+            lastRoom = currentRoom;
             currentRoom = room;
         }
         public int getCurrentRoom()

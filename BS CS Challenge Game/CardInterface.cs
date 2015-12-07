@@ -13,6 +13,8 @@ namespace BS_CS_Challenge_Game
 
         }
 
+        abstract public bool DicardThisCard();
+        abstract public bool Check(Player p);
         abstract public string Play(Player p);
         abstract public string getImage();
     }
