@@ -52,12 +52,14 @@
     <Compile Include="CECS282.cs" />
     <Compile Include="CECS285.cs" />
     <Compile Include="choseChip.cs" />
+<<<<<<< HEAD
     <Compile Include="ENGL317.cs" />
     <Compile Include="MoreCraft.cs" />
     <Compile Include="MoreIntegrity.cs" />
     <Compile Include="MoreLearning.cs" />
     <Compile Include="PHIL270.cs" />
     <Compile Include="PHYS152.cs" />
+=======
     <Compile Include="choseChipForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +72,7 @@
     <Compile Include="PopupForm.Designer.cs">
       <DependentUpon>PopupForm.cs</DependentUpon>
     </Compile>
+>>>>>>> refs/remotes/origin/Ben'sBranch
     <Compile Include="TheOutpost.cs" />
     <Compile Include="TheBigGame.cs" />
     <Compile Include="StudentParking.cs" />
