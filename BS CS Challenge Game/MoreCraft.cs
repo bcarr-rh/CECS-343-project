@@ -17,7 +17,7 @@ namespace BS_CS_Challenge_Game
 
         public override bool Check(Player p)
         {
-            true;
+            return true;
         }
 
         public override bool DicardThisCard()

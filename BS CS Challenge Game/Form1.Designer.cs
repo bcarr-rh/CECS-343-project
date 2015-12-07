@@ -1236,7 +1236,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(4175, 5000);
+            this.pictureBox1.Size = new System.Drawing.Size(1670, 2000);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
@@ -1288,10 +1288,11 @@
             // roomsList
             // 
             this.roomsList.FormattingEnabled = true;
+            this.roomsList.ItemHeight = 31;
             this.roomsList.Location = new System.Drawing.Point(22, 258);
             this.roomsList.Margin = new System.Windows.Forms.Padding(8);
             this.roomsList.Name = "roomsList";
-            this.roomsList.Size = new System.Drawing.Size(339, 186);
+            this.roomsList.Size = new System.Drawing.Size(339, 159);
             this.roomsList.TabIndex = 5;
             this.roomsList.SelectedIndexChanged += new System.EventHandler(this.roomsList_SelectedIndexChanged);
             // 
@@ -1342,7 +1343,7 @@
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
