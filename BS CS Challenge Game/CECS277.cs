@@ -15,6 +15,16 @@ namespace BS_CS_Challenge_Game
             thisImage = "CECS277";
         }
 
+        public override bool Check(Player p)
+        {
+            return (p.getCurrentRoom() == 17);
+        }
+
+        public override bool DicardThisCard()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string getImage()
         {
             return thisImage;

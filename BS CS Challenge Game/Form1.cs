@@ -47,9 +47,9 @@ namespace BS_CS_Challenge_Game
             
             this.splitContainer1.Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 3;
             this.splitContainer1.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 3;
-            playerArray[0] = new Player("John", 308);
-            playerArray[1] = new Player("Kyle", 308);
-            playerArray[2] = new Player("Martha", 308);
+            playerArray[0] = new Player("John", 17);
+            playerArray[1] = new Player("Kyle", 17);
+            playerArray[2] = new Player("Martha", 17);
             playerArray[0].addLChip(2);
             playerArray[0].addCChip(2);
             playerArray[0].addIChip(2);
@@ -202,7 +202,6 @@ namespace BS_CS_Challenge_Game
             deck.RemoveAt(deck.Count - 1);
             pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            updatePointsDisplay();
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
@@ -217,7 +216,7 @@ namespace BS_CS_Challenge_Game
             playerArray[1].setAi(true);
             playerArray[2].setAi(true);
 
-
+            updatePointsDisplay();
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -531,6 +530,17 @@ namespace BS_CS_Challenge_Game
                 }
                 //TODO
                 //ADD ALL NEW CARDS TO DECK HERE FOR SOPHMORE
+                deck.Add(new CECS201());
+                deck.Add(new CECS228());
+                deck.Add(new CECS274());
+                deck.Add(new CECS277());
+                deck.Add(new CECS282());
+                deck.Add(new ENGL317());
+                deck.Add(new PHIL270());
+                deck.Add(new PHYS152());
+                deck.Add(new MoreCraft());
+                deck.Add(new MoreIntegrity());
+                deck.Add(new MoreLearning());
             }
             //TODOfix the move after card is done.
             //teleport after play card fix
@@ -550,7 +560,7 @@ namespace BS_CS_Challenge_Game
             lines[2] = playerArray[2].getPlayerName() + " Learning: " + playerArray[2].getLChip() + " Craft: " + playerArray[2].getCChip() + " Integrity: " + playerArray[2].getIChip() + " Quality: " + playerArray[2].getQPoint();
             lines[3] = "Cards in Deck: " + deck.Count;
             lines[4] = "Discards out of play: " + discardDeck.Count;
-            lines[5] = playerArray[0].getPlayerName() + " " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
+            lines[5] = playerArray[0].getPlayerName() + " is in " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
             PointsDisplay.Lines = lines;
         }
 

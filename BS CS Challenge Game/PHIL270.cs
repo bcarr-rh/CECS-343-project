@@ -15,6 +15,16 @@ namespace BS_CS_Challenge_Game
             thisImage = "PHIL270";
         }
 
+        public override bool Check(Player p)
+        {
+            return (p.getCurrentRoom() == 19);
+        }
+
+        public override bool DicardThisCard()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string getImage()
         {
             return thisImage;
