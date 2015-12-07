@@ -289,6 +289,7 @@ namespace BS_CS_Challenge_Game
         private void DrawCard_Click(object sender, EventArgs e)
         {
             DrawCard.Enabled = false;
+            MoveButton.Enabled = true;
             if (deck.Count == 0)
             {
                 for (int i = 0; discardDeck.Count != 0;i++)
@@ -364,7 +365,7 @@ namespace BS_CS_Challenge_Game
 
         private void roomsList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (moveCount < 3)
+            if (moveCount < 3 && !DrawCard.Enabled)
             {
                 MoveButton.Enabled = true;
             }
@@ -432,7 +433,7 @@ namespace BS_CS_Challenge_Game
         private void PlayCardButton_Click(object sender, EventArgs e)
         {
             moveCount = 0; //RESET MOVES
-            MoveButton.Enabled = true;
+            MoveButton.Enabled = false;
             PlayCardButton.Enabled = false;
             DrawCard.Enabled = true;
             PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
@@ -528,6 +529,14 @@ namespace BS_CS_Challenge_Game
                 deck.Add(new MoreCraft());
                 deck.Add(new MoreIntegrity());
                 deck.Add(new MoreLearning());
+                for (int i = 0; i < 5; i++)
+                {
+                    playerArray[0].addCard(deck[deck.Count - 1]);
+                    deck.RemoveAt(deck.Count - 1);
+                }
+
+                showCard = deck[deck.Count - 1];
+                deck.RemoveAt(deck.Count - 1);
             }
             Random rnd = new Random();
             //AI One

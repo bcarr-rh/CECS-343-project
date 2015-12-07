@@ -36,7 +36,10 @@ namespace BS_CS_Challenge_Game
             {
                 p.addQPoint(5);
                 choseChipForm chose = new choseChipForm(1, 1, 1, p);
-                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                if (!p.getAi())
+                {
+                    System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                }
                 string temp = chose.getChoice();
                 chose.Close();
                 return (p.getPlayerName() + " played " + thisImage + " for 5 Quality Points and " + temp);
