@@ -47,9 +47,9 @@ namespace BS_CS_Challenge_Game
             
             this.splitContainer1.Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 3;
             this.splitContainer1.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 3;
-            playerArray[0] = new Player("John", 308);
-            playerArray[1] = new Player("Kyle", 308);
-            playerArray[2] = new Player("Martha", 308);
+            playerArray[0] = new Player("John", 17);
+            playerArray[1] = new Player("Kyle", 17);
+            playerArray[2] = new Player("Martha", 17);
             playerArray[0].addLChip(2);
             playerArray[0].addCChip(2);
             playerArray[0].addIChip(2);
@@ -324,46 +324,7 @@ namespace BS_CS_Challenge_Game
             catch(NullReferenceException) {
                 MessageBox.Show("Select a room to move to");
             }
-            //AI LOGIC
-            Random rnd = new Random();
-            //AI One
-            for (int i = 0; i < 3; i++)
-            {
-                roomArray[playerArray[1].getCurrentRoom()].MoveOut(playerArray[1].getPlayerName());
-                int ai1RndSize = roomArray[playerArray[1].getCurrentRoom()].getNextTo().Count() - 1;
-                int ai1 = roomArray[playerArray[1].getCurrentRoom()].getNextTo()[rnd.Next(0, ai1RndSize)];
-                playerArray[1].setCurrentRoom(roomArray[ai1].getRoomNum());
-                roomArray[ai1].MoveTo(playerArray[1].getPlayerName());
-                foreach (CardInterface c in deck)
-                {
-                    if (c.Check(playerArray[1]))
-                    {
-                        PlayerIndicator.Lines = new string[] { c.Play(playerArray[1]) };
-                        i = 3;
-                        break;
-                    }
-                }
-            }
-            //AI two
-            for (int i = 0; i < 3; i++)
-            {
-                roomArray[playerArray[2].getCurrentRoom()].MoveOut(playerArray[2].getPlayerName());
-                int ai2RndSize = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Count() - 1;
-                int ai2 = roomArray[playerArray[2].getCurrentRoom()].getNextTo()[rnd.Next(0, ai2RndSize)];
-                playerArray[2].setCurrentRoom(roomArray[ai2].getRoomNum());
-                roomArray[ai2].MoveTo(playerArray[2].getPlayerName());
-                foreach (CardInterface c in deck)
-                {
-                    if(c.Check(playerArray[2]))
-                    {
-                        PlayerIndicator.Lines = new string[] { c.Play(playerArray[2]) };
-                        discardDeck.Add(c);
-                        deck.Remove(c);
-                        i = 3;
-                        break;
-                    }
-                }
-            }
+            
             //reset roomsList
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
@@ -451,7 +412,7 @@ namespace BS_CS_Challenge_Game
             DrawCard.Enabled = true;
             PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
             // if QP % 15 == 0 get a chip of choice.
-            if (playerArray[0].getQPoint() % 15 == 0)
+            if (playerArray[0].getQPoint() % 15 == 0 && playerArray[0].getQPoint()!=0)
             {
                 choseChipForm chose = new choseChipForm(1, 1, 1, playerArray[0]);
             }
@@ -536,7 +497,64 @@ namespace BS_CS_Challenge_Game
             //teleport after play card fix
             roomArray[playerArray[0].lastRoom].MoveOut(playerArray[0].getPlayerName());
             roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
-
+            //AI LOGIC
+            Random rnd = new Random();
+            //AI One
+            for (int i = 0; i < 3; i++)
+            {
+                roomArray[playerArray[1].getCurrentRoom()].MoveOut(playerArray[1].getPlayerName());
+                int ai1RndSize = roomArray[playerArray[1].getCurrentRoom()].getNextTo().Count() - 1;
+                int ai1 = roomArray[playerArray[1].getCurrentRoom()].getNextTo()[rnd.Next(0, ai1RndSize)];
+                playerArray[1].setCurrentRoom(roomArray[ai1].getRoomNum());
+                roomArray[ai1].MoveTo(playerArray[1].getPlayerName());
+                foreach (CardInterface c in deck)
+                {
+                    if (c.Check(playerArray[1]))
+                    {
+                        string[] stringArray = new string[PlayerIndicator.Lines.Length+1];
+                        int counter = 0;
+                        foreach(string s in PlayerIndicator.Lines)
+                        {
+                            stringArray[counter] = s;
+                            counter++;
+                        }
+                        stringArray[counter] = c.Play(playerArray[1]);
+                        PlayerIndicator.Lines = stringArray;
+                        deck.Remove(c);
+                        discardDeck.Add(c);
+                        i = 3;
+                        break;
+                    }
+                }
+            }
+            //AI two
+            for (int i = 0; i < 3; i++)
+            {
+                roomArray[playerArray[2].getCurrentRoom()].MoveOut(playerArray[2].getPlayerName());
+                int ai2RndSize = roomArray[playerArray[2].getCurrentRoom()].getNextTo().Count() - 1;
+                int ai2 = roomArray[playerArray[2].getCurrentRoom()].getNextTo()[rnd.Next(0, ai2RndSize)];
+                playerArray[2].setCurrentRoom(roomArray[ai2].getRoomNum());
+                roomArray[ai2].MoveTo(playerArray[2].getPlayerName());
+                foreach (CardInterface c in deck)
+                {
+                    if (c.Check(playerArray[2]))
+                    {
+                        string[] stringArray = new string[PlayerIndicator.Lines.Length + 1];
+                        int counter = 0;
+                        foreach (string s in PlayerIndicator.Lines)
+                        {
+                            stringArray[counter] = s;
+                            counter++;
+                        }
+                        stringArray[counter] = c.Play(playerArray[2]);
+                        PlayerIndicator.Lines = stringArray;
+                        deck.Remove(c);
+                        discardDeck.Add(c);
+                        i = 3;
+                        break;
+                    }
+                }
+            }
             updatePointsDisplay();
         }
 

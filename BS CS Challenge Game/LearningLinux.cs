@@ -22,7 +22,7 @@ namespace BS_CS_Challenge_Game
             {
                 p.addQPoint(3);
                 choseChipForm chose = new choseChipForm(1, 1, 1, p);
-                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                if(!p.getAi()) { System.Windows.Forms.DialogResult dg = chose.ShowDialog(); }
                 string temp = chose.getChoice();
                 return (p.getPlayerName() + " played " + thisImage + " for 3 Quality Points and " + temp);
             }
