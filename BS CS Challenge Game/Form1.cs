@@ -33,7 +33,7 @@ namespace BS_CS_Challenge_Game
             discardDeck =  new List<CardInterface>();
             roomArray = new Room[21];
             playerArray = new Player[3];
-            /**
+            
             if (Screen.PrimaryScreen.Bounds.Width > 1670)
                 this.Width = 1670;
             else
@@ -42,12 +42,21 @@ namespace BS_CS_Challenge_Game
                 this.Height = 2000;
             else 
                 this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
-             **/
+            
             this.splitContainer1.Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 3;
             this.splitContainer1.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 3;
-            playerArray[0] = new Player("John", 2);
-            playerArray[1] = new Player("Kyle", 2);
-            playerArray[2] = new Player("Martha", 2);
+            playerArray[0] = new Player("John", 308);
+            playerArray[1] = new Player("Kyle", 308);
+            playerArray[2] = new Player("Martha", 308);
+            playerArray[0].addLChip(2);
+            playerArray[0].addCChip(2);
+            playerArray[0].addIChip(2);
+            playerArray[1].addLChip(3);
+            playerArray[1].addCChip(1);
+            playerArray[1].addIChip(2);
+            playerArray[2].addLChip(0);
+            playerArray[2].addCChip(3);
+            playerArray[2].addIChip(3);
             Random rnd = new Random();
             // shuffle player array
             int n = playerArray.Length;
@@ -58,6 +67,8 @@ namespace BS_CS_Challenge_Game
                 playerArray[n] = playerArray[k];
                 playerArray[k] = temp;
             }
+
+
             roomArray[0] = new Room("George Allen Field",0, button1, button2, button3);
             roomArray[1] = new Room("Japanese Garden",1, button6, button5, button4);
             roomArray[2] = new Room("Student Parking",2, button9, button8, button7);
@@ -289,12 +300,10 @@ namespace BS_CS_Challenge_Game
 
         private void MoveButton_Click(object sender, EventArgs e)
         {
-
             moveCount++;
             try {
                 String Room = roomsList.SelectedItem.ToString();
                 foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
-
                 {
                     if (roomArray[s].getRoomName().Equals(Room))
                     {
@@ -398,16 +407,77 @@ namespace BS_CS_Challenge_Game
             pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
 
         }
-
+        //TODO if QP % 15 == 0 get a chip of choice.
+        //TODO Add AI Move and Play.
+        //TODO Monitor total QP for all players and if > 60 discard cards and add new ones.
+        //TODO Before reset of cards discard human players hand and draw 5 of the new cards.
+        //TODO fix the move after card is done.
         private void PlayCardButton_Click(object sender, EventArgs e)
         {
-            updatePointsDisplay();
             MoveButton.Enabled = true;
             PlayCardButton.Enabled = false;
             DrawCard.Enabled = true;
             PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
 
+            //discard cards
+            while (playerArray[0].getDisCard() > 0)
+            {
+                PopupForm popup = new PopupForm();
+                //PictureBox discardPic = new PictureBox();
+                //popup.Controls.Add(discardPic);
+                popup.setHand(showCard, playerArray[0]);
+                DialogResult dg = popup.ShowDialog();
+                showCard = (CardInterface)popup.getCard();
+                discardDeck.Add(showCard);
+                showCard = playerArray[0].getNextCard();
+                playerArray[0].disCardmm();
+            }
+
+            //shuffle deck if empty
+            while (playerArray[0].getIncCard() > 0)
+            {
+                if (deck.Count == 0)
+                {
+                    for (int i = 0; discardDeck.Count != 0; i++)
+                    {
+                        deck[i] = discardDeck[discardDeck.Count - 1];
+                        discardDeck.RemoveAt(discardDeck.Count - 1);
+                    }
+                    Shuffle();
+                }
+                CardInterface temp = deck[deck.Count - 1];
+                playerArray[0].addCard(temp);
+                deck.RemoveAt(deck.Count - 1);
+            }
+
+            //discard played card and get another from players hand.
+            discardDeck.Add(showCard);
+            showCard = playerArray[0].getNextCard();
+            updatePointsDisplay();
+
+            //discard if hand bigger then 7
+            while( playerArray[0].handSize() > 7)
+            {
+                playerArray[0].discardPick();
+            }
+
+            while (playerArray[0].getDisCard() > 0)
+            {
+                PopupForm popup = new PopupForm();
+                //PictureBox discardPic = new PictureBox();
+                //popup.Controls.Add(discardPic);
+                popup.setHand(showCard, playerArray[0]);
+                DialogResult dg = popup.ShowDialog();
+                showCard = (CardInterface)popup.getCard();
+                discardDeck.Add(showCard);
+                showCard = playerArray[0].getNextCard();
+                playerArray[0].disCardmm();
+            }
+            updatePointsDisplay();
         }
+
+
+
         private void updatePointsDisplay()
         {
             string[] lines = new string[6];

@@ -17,15 +17,17 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-
             if (p.getCurrentRoom() == 11 && p.getIChip() > 3)
             {
                 p.addQPoint(3);
-                choseChip chose = new choseChip(1, 1, 1, p);
-                p.addChipChosen(chose.getChoice());
-                return (p.getPlayerName() + " played " + thisImage + " for 3 Quality Points and " + chose.getChoice());
+                choseChipForm chose = new choseChipForm(1, 1, 1, p);
+                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                string temp = chose.getChoice();
+                chose.Close();
+                return (p.getPlayerName() + " played " + thisImage + " for 3 Quality Points and " + temp);
             }
             p.discardPick();
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
 
         }

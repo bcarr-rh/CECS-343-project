@@ -21,9 +21,10 @@ namespace BS_CS_Challenge_Game
             if (p.getCurrentRoom() < 11 && p.getIChip() > 3)
             {
                 p.addQPoint(4);
-                choseChip chose = new choseChip(1, 1, 1, p);
-                p.addChipChosen(chose.getChoice());
-                return (p.getPlayerName() + " played " + thisImage + " for 4 Quality Points and " + chose.getChoice());
+                choseChipForm chose = new choseChipForm(1, 1, 1, p);
+                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                string temp = chose.getChoice();
+                return (p.getPlayerName() + " played " + thisImage + " for 4 Quality Points and " + temp);
             }
             p.discardPick();
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
