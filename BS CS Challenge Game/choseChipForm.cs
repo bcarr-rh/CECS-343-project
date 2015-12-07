@@ -16,19 +16,39 @@ namespace BS_CS_Challenge_Game
         private string choice;
         public choseChipForm(int l, int c, int i, Object p)
         {
-            InitializeComponent();
             currentPlayer = (Player)p;
-            if (i == 0)
-            {
+            if (!currentPlayer.getAi()) { 
+                InitializeComponent();
+                if (i == 0)
+                {
                 button1.Enabled = false;
-            }
-            if (l == 0)
-            {
+                }
+                if (l == 0)
+                {
                 button3.Enabled = false;
-            }
-            if (c == 0)
-            {
+                }
+                if (c == 0)
+                {
                 button2.Enabled = false;
+                }
+            }
+            else
+            {
+                if (i == 1)
+                {
+                    currentPlayer.addIChip(1);
+                    choice = "1 Integrity Chip";
+                }
+                else if (l == 1)
+                {
+                    currentPlayer.addLChip(1);
+                    choice = "1 Learning Chip";
+                }
+                else
+                {
+                    currentPlayer.addCChip(1);
+                    choice = "1 Craft Chip";
+                }
             }
         }
 

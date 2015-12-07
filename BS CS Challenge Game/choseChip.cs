@@ -117,5 +117,17 @@ namespace BS_CS_Challenge_Game
             player.addLChip(1);
             //this.Close();
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // choseChip
+            // 
+            this.ClientSize = new System.Drawing.Size(1224, 734);
+            this.Name = "choseChip";
+            this.ResumeLayout(false);
+
+        }
     }
 }

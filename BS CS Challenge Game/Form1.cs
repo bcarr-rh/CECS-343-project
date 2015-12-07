@@ -20,6 +20,7 @@ namespace BS_CS_Challenge_Game
         private int moveCount;
         private CardInterface showCard;
         private bool SophmoreCheck;
+        private readonly int MOVELIMIT = 3;
 
         public Form1()
         {
@@ -193,16 +194,17 @@ namespace BS_CS_Challenge_Game
             Shuffle();
             PlayCardButton.Enabled = false;
             moveCount = 0;
+            
             for (int i = 0; i < 5; i++)
             {
                 playerArray[0].addCard(deck[deck.Count - 1]);
                 deck.RemoveAt(deck.Count - 1);
             }
+            //playerArray[0].addCard(deck[20]); problems with make a friend card
             showCard = deck[deck.Count - 1];
             deck.RemoveAt(deck.Count - 1);
             pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            updatePointsDisplay();
             roomsList.Items.Clear();
             foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
             {
@@ -217,7 +219,7 @@ namespace BS_CS_Challenge_Game
             playerArray[1].setAi(true);
             playerArray[2].setAi(true);
 
-
+            updatePointsDisplay();
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -287,6 +289,7 @@ namespace BS_CS_Challenge_Game
         private void DrawCard_Click(object sender, EventArgs e)
         {
             DrawCard.Enabled = false;
+            MoveButton.Enabled = true;
             if (deck.Count == 0)
             {
                 for (int i = 0; discardDeck.Count != 0;i++)
@@ -332,7 +335,7 @@ namespace BS_CS_Challenge_Game
                 roomsList.Items.Add(roomArray[s].getRoomName());
             }
 
-            if (moveCount == 3)
+            if (moveCount >= MOVELIMIT)
             {
                 MoveButton.Enabled = false;
             }
@@ -343,7 +346,10 @@ namespace BS_CS_Challenge_Game
 
         private void roomsList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MoveButton.Enabled = true;
+            if (moveCount < 3 && !DrawCard.Enabled)
+            {
+                MoveButton.Enabled = true;
+            }
         }
 
         private void button41_Click(object sender, EventArgs e)
@@ -407,12 +413,13 @@ namespace BS_CS_Challenge_Game
         //DONE: TODO fix the move after card is done.
         private void PlayCardButton_Click(object sender, EventArgs e)
         {
-            MoveButton.Enabled = true;
+            moveCount = 0; //RESET MOVES
+            MoveButton.Enabled = false;
             PlayCardButton.Enabled = false;
             DrawCard.Enabled = true;
             PlayerIndicator.Lines = new string[] { showCard.Play(playerArray[0]) };
             // if QP % 15 == 0 get a chip of choice.
-            if (playerArray[0].getQPoint() % 15 == 0 && playerArray[0].getQPoint()!=0)
+            if (playerArray[0].getQPoint() % 15 == 0)
             {
                 choseChipForm chose = new choseChipForm(1, 1, 1, playerArray[0]);
             }
@@ -492,11 +499,26 @@ namespace BS_CS_Challenge_Game
                 }
                 //TODO
                 //ADD ALL NEW CARDS TO DECK HERE FOR SOPHMORE
+                deck.Add(new CECS201());
+                deck.Add(new CECS228());
+                deck.Add(new CECS274());
+                deck.Add(new CECS277());
+                deck.Add(new CECS282());
+                deck.Add(new ENGL317());
+                deck.Add(new PHIL270());
+                deck.Add(new PHYS152());
+                deck.Add(new MoreCraft());
+                deck.Add(new MoreIntegrity());
+                deck.Add(new MoreLearning());
+                for (int i = 0; i < 5; i++)
+                {
+                    playerArray[0].addCard(deck[deck.Count - 1]);
+                    deck.RemoveAt(deck.Count - 1);
+                }
+
+                showCard = deck[deck.Count - 1];
+                deck.RemoveAt(deck.Count - 1);
             }
-            //TODOfix the move after card is done.
-            //teleport after play card fix
-            roomArray[playerArray[0].lastRoom].MoveOut(playerArray[0].getPlayerName());
-            roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
             //AI LOGIC
             Random rnd = new Random();
             //AI One
@@ -511,9 +533,9 @@ namespace BS_CS_Challenge_Game
                 {
                     if (c.Check(playerArray[1]))
                     {
-                        string[] stringArray = new string[PlayerIndicator.Lines.Length+1];
+                        string[] stringArray = new string[PlayerIndicator.Lines.Length + 1];
                         int counter = 0;
-                        foreach(string s in PlayerIndicator.Lines)
+                        foreach (string s in PlayerIndicator.Lines)
                         {
                             stringArray[counter] = s;
                             counter++;
@@ -555,6 +577,11 @@ namespace BS_CS_Challenge_Game
                     }
                 }
             }
+            //TODOfix the move after card is done.
+            //teleport after play card fix
+            roomArray[playerArray[0].lastRoom].MoveOut(playerArray[0].getPlayerName());
+            roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
+
             updatePointsDisplay();
         }
 
@@ -562,13 +589,14 @@ namespace BS_CS_Challenge_Game
 
         private void updatePointsDisplay()
         {
+            pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
             string[] lines = new string[6];
             lines[0] = playerArray[0].getPlayerName() + " Learning: " + playerArray[0].getLChip() + " Craft: " + playerArray[0].getCChip() + " Integrity: " + playerArray[0].getIChip() + " Quality: " + playerArray[0].getQPoint();
             lines[1] = playerArray[1].getPlayerName() + " Learning: " + playerArray[1].getLChip() + " Craft: " + playerArray[1].getCChip() + " Integrity: " + playerArray[1].getIChip() + " Quality: " + playerArray[1].getQPoint();
             lines[2] = playerArray[2].getPlayerName() + " Learning: " + playerArray[2].getLChip() + " Craft: " + playerArray[2].getCChip() + " Integrity: " + playerArray[2].getIChip() + " Quality: " + playerArray[2].getQPoint();
             lines[3] = "Cards in Deck: " + deck.Count;
             lines[4] = "Discards out of play: " + discardDeck.Count;
-            lines[5] = playerArray[0].getPlayerName() + " " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
+            lines[5] = playerArray[0].getPlayerName() + " is in " + roomArray[playerArray[0].getCurrentRoom()].getRoomName();
             PointsDisplay.Lines = lines;
         }
 
