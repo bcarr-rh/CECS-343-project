@@ -532,7 +532,7 @@ namespace BS_CS_Challenge_Game
                 //TODO
                 //ADD ALL NEW CARDS TO DECK HERE FOR SOPHMORE
             }
-            //TODO fix the move after card is done.
+            //TODOfix the move after card is done.
             //teleport after play card fix
             roomArray[playerArray[0].lastRoom].MoveOut(playerArray[0].getPlayerName());
             roomArray[playerArray[0].getCurrentRoom()].MoveTo(playerArray[0].getPlayerName());
