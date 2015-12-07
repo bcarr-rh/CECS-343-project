@@ -32,11 +32,17 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 17)
+            if ((p.getCurrentRoom() == 8 || p.getCurrentRoom() == 7) &&
+                 p.getIChip() == 7)
             {
-                p.addIChip(3);
-                return (p.getPlayerName() + " played PHYS 152 Class for 3 Integrity chips");
+                p.addQPoint(3);
+                choseChipForm chose = new choseChipForm(1, 1, 1, p);
+                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                string temp = chose.getChoice();
+                chose.Close();
+                return (p.getPlayerName() + " played " + thisImage + " for 5 Quality Points and " + temp);
             }
+            p.discardPick();
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }

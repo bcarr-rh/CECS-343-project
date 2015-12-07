@@ -17,7 +17,8 @@ namespace BS_CS_Challenge_Game
 
         public override bool Check(Player p)
         {
-            return (p.getCurrentRoom() == 19);
+            return ((p.getCurrentRoom() == 8 || p.getCurrentRoom() == 7) &&
+                 p.getIChip() == 7);
         }
 
         public override bool DicardThisCard()
@@ -32,11 +33,14 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 19)
+            if ((p.getCurrentRoom() == 8 || p.getCurrentRoom() == 7) &&
+                 p.getIChip() == 7)
             {
-                p.addIChip(3);
-                return (p.getPlayerName() + " played PHIL 270 Class for 3 Integrity Chip");
+                p.addQPoint(3);
+                p.addLChip(1);
+                return (p.getPlayerName() + " played PHIL 270 Class for 3 Integrity Chip and 1 Learning Chip");
             }
+            p.addQPoint(-3);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }

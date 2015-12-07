@@ -17,7 +17,7 @@ namespace BS_CS_Challenge_Game
 
         public override bool Check(Player p)
         {
-            return (p.getCurrentRoom() == 11);
+            return ((p.getCurrentRoom() > 9 && p.getCurrentRoom() < 21) && (p.getCChip() >= 8 && p.getIChip() >= 8 && p.getLChip() >= 8));
         }
 
         public override bool DicardThisCard()
@@ -32,11 +32,13 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 11)
+            if ((p.getCurrentRoom() > 9 && p.getCurrentRoom() < 21) && (p.getCChip() >= 8 && p.getIChip() >= 8 && p.getLChip() >= 8))
             {
-                p.addCChip(2);
-                return (p.getPlayerName() + " played CECS 282 Class for 2 Craft Chips");
+                p.addQPoint(5);
+                return (p.getPlayerName() + " played CECS 282 Class for 5 Quality Points");
             }
+            p.addQPoint(-2);
+            p.discardPick();
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }

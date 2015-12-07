@@ -17,7 +17,7 @@ namespace BS_CS_Challenge_Game
 
         public override bool Check(Player p)
         {
-            return (p.getCurrentRoom() == 18);
+            return ((p.getCurrentRoom() == 18 || p.getCurrentRoom() == 1) && p.getLChip() >= 6);
         }
 
         public override bool DicardThisCard()
@@ -32,11 +32,16 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 18)
+            if ((p.getCurrentRoom() == 18 || p.getCurrentRoom() == 1) && p.getLChip() >= 6)
             {
-                p.addCChip(4);
-                return (p.getPlayerName() + " played CECS 285 Class for 4 Craft Chips");
+                p.addQPoint(5);
+                choseChipForm chose = new choseChipForm(1, 1, 1, p);
+                System.Windows.Forms.DialogResult dg = chose.ShowDialog();
+                string temp = chose.getChoice();
+                chose.Close();
+                return (p.getPlayerName() + " played " + thisImage + " for 5 Quality Points and " + temp);
             }
+            p.addQPoint(-3);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }

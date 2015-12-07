@@ -17,7 +17,8 @@ namespace BS_CS_Challenge_Game
 
         public override bool Check(Player p)
         {
-            return (p.getCurrentRoom() == 14);
+            return ((p.getCurrentRoom() == 17 || p.getCurrentRoom() == 14
+                || p.getCurrentRoom() == 11) && (p.getCChip() == 8 && p.getIChip() == 8 && p.getLChip() == 8));
         }
 
         public override bool DicardThisCard()
@@ -32,11 +33,14 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 14)
+            if ((p.getCurrentRoom() == 17 || p.getCurrentRoom() == 14
+                || p.getCurrentRoom() == 11) && (p.getCChip() >= 8 &&  p.getIChip() >= 8 && p.getLChip() >= 8))
             {
-                p.addIChip(3);
-                return (p.getPlayerName() + " played CECS 228 Class for 3 Integrity chips");
+                p.addQPoint(5);
+                return (p.getPlayerName() + " played CECS 228 Card for 5 Quality Points");
             }
+            p.discardPick();
+            p.addQPoint(-2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }

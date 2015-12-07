@@ -17,7 +17,7 @@ namespace BS_CS_Challenge_Game
 
         public override bool Check(Player p)
         {
-            return (p.getCurrentRoom() == 8);
+            return (p.getCurrentRoom() == 8 && p.getCChip() == 6);
         }
 
         public override bool DicardThisCard()
@@ -32,11 +32,12 @@ namespace BS_CS_Challenge_Game
 
         public override string Play(Player p)
         {
-            if (p.getCurrentRoom() == 8)
+            if (p.getCurrentRoom() == 8 && p.getCChip() == 6)
             {
-                p.addCChip(2);
-                return (p.getPlayerName() + " played ENGL 317 Class for 2 Craft chips");
+                p.addQPoint(6);
+                return (p.getPlayerName() + " played ENGL 317 Class for 6 Quality Points");
             }
+            p.setCurrentRoom(2);
             return (p.getPlayerName() + " played " + thisImage + " FAILED");
         }
     }
