@@ -220,7 +220,9 @@ namespace BS_CS_Challenge_Game
             playerArray[0].setAi(false);
             playerArray[1].setAi(true);
             playerArray[2].setAi(true);
-
+            playerArray[0].addQPoint(19);
+            playerArray[1].addQPoint(19);
+            playerArray[2].addQPoint(19);
             updatePointsDisplay();
         }
 
@@ -414,7 +416,7 @@ namespace BS_CS_Challenge_Game
         //DONE: TODO Before reset of cards discard human players hand and draw 5 of the new cards.
         //DONE: TODO fix the move after card is done.
         private void PlayCardButton_Click(object sender, EventArgs e)
-        {
+        { 
             moveCount = 0; //RESET MOVES
             MoveButton.Enabled = false;
             PlayCardButton.Enabled = false;
@@ -425,6 +427,19 @@ namespace BS_CS_Challenge_Game
             {
                 choseChipForm chose = new choseChipForm(1, 1, 1, playerArray[0]);
             }
+            //shuffle deck if empty
+                if (deck.Count <= 0)
+                {
+                    foreach (CardInterface c in discardDeck)
+                    {
+                    deck.Add(c);
+                    discardDeck.Remove(c);
+                    }
+                    Shuffle();
+                }
+            //CardInterface temp = deck[deck.Count - 1];
+            //playerArray[0].addCard(temp);
+            //deck.RemoveAt(deck.Count - 1);
             //discard cards
             while (playerArray[0].getDisCard() > 0)
             {
@@ -444,24 +459,9 @@ namespace BS_CS_Challenge_Game
                 CardInterface temp = deck[deck.Count - 1];
                 playerArray[0].addCard(temp);
                 deck.RemoveAt(deck.Count - 1);
-                playerArray[0].disCardmm();
+                playerArray[0].incCardmm();
             }
-            //shuffle deck if empty
-            while (playerArray[0].getIncCard() > 0)
-            {
-                if (deck.Count == 0)
-                {
-                    for (int i = 0; discardDeck.Count != 0; i++)
-                    {
-                        deck[i] = discardDeck[discardDeck.Count - 1];
-                        discardDeck.RemoveAt(discardDeck.Count - 1);
-                    }
-                    Shuffle();
-                }
-                CardInterface temp = deck[deck.Count - 1];
-                playerArray[0].addCard(temp);
-                deck.RemoveAt(deck.Count - 1);
-            }
+            
 
             //discard played card and get another from players hand.
             discardDeck.Add(showCard);
@@ -471,7 +471,14 @@ namespace BS_CS_Challenge_Game
             //discard if hand bigger then 7
             while( playerArray[0].handSize() > 7)
             {
-                playerArray[0].discardPick();
+                PopupForm popup = new PopupForm();
+                //PictureBox discardPic = new PictureBox();
+                //popup.Controls.Add(discardPic);
+                popup.setHand(showCard, playerArray[0]);
+                DialogResult dg = popup.ShowDialog();
+                showCard = (CardInterface)popup.getCard();
+                discardDeck.Add(showCard);
+                showCard = playerArray[0].getNextCard();
             }
 
             while (playerArray[0].getDisCard() > 0)
