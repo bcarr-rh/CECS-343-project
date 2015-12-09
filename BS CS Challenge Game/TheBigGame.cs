@@ -21,7 +21,7 @@ namespace BS_CS_Challenge_Game
             if (p.getCurrentRoom() == 3)
             {
                 p.addCChip(1);
-                p.setCurrentRoom(19);
+                p.setCurrentRoom(20);
                 return (p.getPlayerName() + " played " + thisImage + " for 1 craft chip");
             }
             p.addQPoint(-2);

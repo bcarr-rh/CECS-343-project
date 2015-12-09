@@ -34,20 +34,23 @@ namespace BS_CS_Challenge_Game
             }
             else
             {
-                if (i == 1)
+                Random rnd = new Random();
+                int randomInt = rnd.Next(1, 3);
+                switch (randomInt)
                 {
-                    currentPlayer.addIChip(1);
-                    choice = "1 Integrity Chip";
-                }
-                else if (l == 1)
-                {
-                    currentPlayer.addLChip(1);
-                    choice = "1 Learning Chip";
-                }
-                else
-                {
-                    currentPlayer.addCChip(1);
-                    choice = "1 Craft Chip";
+                    case 1:
+                        currentPlayer.addLChip(l);
+                        choice = "1 Integrity Chip";
+                        break;
+                    case 2:
+                        currentPlayer.addCChip(l);
+                        choice = "1 Craft Chip";
+                        break;
+                    default:
+                        currentPlayer.addIChip(l);
+                        choice = "1 Learning Chip";
+                        break;
+
                 }
             }
         }

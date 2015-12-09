@@ -26,10 +26,13 @@ namespace BS_CS_Challenge_Game
         {
             InitializeComponent();
             
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             SophmoreCheck = false;
             MoveButton.Enabled = false;
             deck =  new List<CardInterface>();
@@ -46,8 +49,7 @@ namespace BS_CS_Challenge_Game
             else 
                 this.Height = Screen.PrimaryScreen.Bounds.Height - 100;
             
-            this.splitContainer1.Width = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / 3;
-            this.splitContainer1.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / 3;
+            
             playerArray[0] = new Player("John", 17);
             playerArray[1] = new Player("Kyle", 17);
             playerArray[2] = new Player("Martha", 17);
@@ -436,7 +438,14 @@ namespace BS_CS_Challenge_Game
                 showCard = playerArray[0].getNextCard();
                 playerArray[0].disCardmm();
             }
-
+            //add Card
+            while (playerArray[0].getIncCard() > 0)
+            {
+                CardInterface temp = deck[deck.Count - 1];
+                playerArray[0].addCard(temp);
+                deck.RemoveAt(deck.Count - 1);
+                playerArray[0].disCardmm();
+            }
             //shuffle deck if empty
             while (playerArray[0].getIncCard() > 0)
             {
@@ -486,18 +495,20 @@ namespace BS_CS_Challenge_Game
                     discardDeck.RemoveAt(discardDeck.Count - 1);
                 }
                 deck.Add(showCard);
-                while(playerArray[0].handSize() > 0)
+                while(playerArray[0].handSize() -1 > 0)
                 {
                     deck.Add(playerArray[0].getNextCard());
                 }
-                foreach(CardInterface c in deck)
+                for(int cardCount = 0; cardCount < deck.Count; cardCount++)
                 {
-                    if (c.DicardThisCard())
+                    if (deck[cardCount].DicardThisCard())
                     {
-                        deck.Remove(c);
+                        deck.Remove(deck[cardCount]);
+                        cardCount--;
                     }
+         
                 }
-                //TODO
+               
                 //ADD ALL NEW CARDS TO DECK HERE FOR SOPHMORE
                 deck.Add(new CECS201());
                 deck.Add(new CECS228());
@@ -510,6 +521,7 @@ namespace BS_CS_Challenge_Game
                 deck.Add(new MoreCraft());
                 deck.Add(new MoreIntegrity());
                 deck.Add(new MoreLearning());
+                Shuffle();
                 for (int i = 0; i < 5; i++)
                 {
                     playerArray[0].addCard(deck[deck.Count - 1]);
@@ -589,6 +601,11 @@ namespace BS_CS_Challenge_Game
 
         private void updatePointsDisplay()
         {
+            roomsList.Items.Clear();
+            foreach (int s in roomArray[playerArray[0].getCurrentRoom()].getNextTo())
+            {
+                roomsList.Items.Add(roomArray[s].getRoomName());
+            }
             pictureBox2.ImageLocation = "C:\\Users\\adoni\\Documents\\Visual Studio 2015\\Projects\\CECS-343-project\\BS CS Challenge Game\\Resources\\" + showCard.getImage() + ".JPG";
             string[] lines = new string[6];
             lines[0] = playerArray[0].getPlayerName() + " Learning: " + playerArray[0].getLChip() + " Craft: " + playerArray[0].getCChip() + " Integrity: " + playerArray[0].getIChip() + " Quality: " + playerArray[0].getQPoint();

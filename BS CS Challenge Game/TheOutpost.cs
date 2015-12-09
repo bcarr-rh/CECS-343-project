@@ -18,7 +18,7 @@ namespace BS_CS_Challenge_Game
         public override string Play(Player p)
         {
 
-            if (p.getCurrentRoom() < 10 && p.getCurrentRoom() != 6)
+            if (p.getCurrentRoom() < 11 && p.getCurrentRoom() != 6)
             {
                 choseChipForm chose = new choseChipForm(1, 1, 1, p);
 
@@ -46,7 +46,7 @@ namespace BS_CS_Challenge_Game
         }
         public override bool Check(Player p)
         {
-            return (p.getCurrentRoom() < 10 && p.getCurrentRoom() != 6);
+            return (p.getCurrentRoom() < 11 && p.getCurrentRoom() != 6);
         }
     }
 }

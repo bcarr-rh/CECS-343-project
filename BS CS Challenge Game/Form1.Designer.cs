@@ -196,8 +196,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel2);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint_1);
-            this.splitContainer1.Size = new System.Drawing.Size(1362, 741);
-            this.splitContainer1.SplitterDistance = 451;
+            this.splitContainer1.Size = new System.Drawing.Size(1605, 1204);
+            this.splitContainer1.SplitterDistance = 732;
             this.splitContainer1.SplitterWidth = 10;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -1245,20 +1245,20 @@
             // 
             this.panel2.Controls.Add(this.PlayerIndicator);
             this.panel2.Controls.Add(this.PointsDisplay);
-            this.panel2.Location = new System.Drawing.Point(852, 10);
+            this.panel2.Location = new System.Drawing.Point(562, 10);
             this.panel2.Margin = new System.Windows.Forms.Padding(8);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2525, 530);
+            this.panel2.Size = new System.Drawing.Size(660, 381);
             this.panel2.TabIndex = 1;
             // 
             // PlayerIndicator
             // 
-            this.PlayerIndicator.Location = new System.Drawing.Point(10, 345);
+            this.PlayerIndicator.Location = new System.Drawing.Point(10, 180);
             this.PlayerIndicator.Margin = new System.Windows.Forms.Padding(8);
             this.PlayerIndicator.Multiline = true;
             this.PlayerIndicator.Name = "PlayerIndicator";
             this.PlayerIndicator.ReadOnly = true;
-            this.PlayerIndicator.Size = new System.Drawing.Size(2502, 156);
+            this.PlayerIndicator.Size = new System.Drawing.Size(580, 147);
             this.PlayerIndicator.TabIndex = 1;
             // 
             // PointsDisplay
@@ -1268,7 +1268,7 @@
             this.PointsDisplay.Multiline = true;
             this.PointsDisplay.Name = "PointsDisplay";
             this.PointsDisplay.ReadOnly = true;
-            this.PointsDisplay.Size = new System.Drawing.Size(2502, 314);
+            this.PointsDisplay.Size = new System.Drawing.Size(582, 154);
             this.PointsDisplay.TabIndex = 0;
             // 
             // panel1
@@ -1282,36 +1282,37 @@
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(825, 530);
+            this.panel1.Size = new System.Drawing.Size(549, 373);
             this.panel1.TabIndex = 0;
             // 
             // roomsList
             // 
             this.roomsList.FormattingEnabled = true;
-            this.roomsList.Location = new System.Drawing.Point(22, 258);
+            this.roomsList.ItemHeight = 31;
+            this.roomsList.Location = new System.Drawing.Point(22, 198);
             this.roomsList.Margin = new System.Windows.Forms.Padding(8);
             this.roomsList.Name = "roomsList";
-            this.roomsList.Size = new System.Drawing.Size(339, 147);
+            this.roomsList.Size = new System.Drawing.Size(189, 128);
             this.roomsList.TabIndex = 5;
             this.roomsList.SelectedIndexChanged += new System.EventHandler(this.roomsList_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox2.Location = new System.Drawing.Point(392, 20);
+            this.pictureBox2.Location = new System.Drawing.Point(247, 15);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(8);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(432, 475);
+            this.pictureBox2.Size = new System.Drawing.Size(277, 311);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // PlayCardButton
             // 
-            this.PlayCardButton.Location = new System.Drawing.Point(22, 182);
+            this.PlayCardButton.Location = new System.Drawing.Point(22, 142);
             this.PlayCardButton.Margin = new System.Windows.Forms.Padding(8);
             this.PlayCardButton.Name = "PlayCardButton";
-            this.PlayCardButton.Size = new System.Drawing.Size(188, 58);
+            this.PlayCardButton.Size = new System.Drawing.Size(100, 40);
             this.PlayCardButton.TabIndex = 2;
             this.PlayCardButton.Text = "Play Card";
             this.PlayCardButton.UseVisualStyleBackColor = true;
@@ -1319,10 +1320,10 @@
             // 
             // MoveButton
             // 
-            this.MoveButton.Location = new System.Drawing.Point(22, 108);
+            this.MoveButton.Location = new System.Drawing.Point(22, 86);
             this.MoveButton.Margin = new System.Windows.Forms.Padding(8);
             this.MoveButton.Name = "MoveButton";
-            this.MoveButton.Size = new System.Drawing.Size(188, 58);
+            this.MoveButton.Size = new System.Drawing.Size(100, 40);
             this.MoveButton.TabIndex = 1;
             this.MoveButton.Text = "Move";
             this.MoveButton.UseVisualStyleBackColor = true;
@@ -1333,7 +1334,7 @@
             this.DrawCard.Location = new System.Drawing.Point(22, 32);
             this.DrawCard.Margin = new System.Windows.Forms.Padding(8);
             this.DrawCard.Name = "DrawCard";
-            this.DrawCard.Size = new System.Drawing.Size(188, 58);
+            this.DrawCard.Size = new System.Drawing.Size(100, 40);
             this.DrawCard.TabIndex = 0;
             this.DrawCard.Text = "Draw Card";
             this.DrawCard.UseVisualStyleBackColor = true;
@@ -1346,7 +1347,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1605, 1204);
             this.Controls.Add(this.splitContainer1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

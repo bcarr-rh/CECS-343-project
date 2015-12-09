@@ -18,7 +18,7 @@ namespace BS_CS_Challenge_Game
         public override string Play(Player p)
         {
 
-            if (p.getCurrentRoom() == 19 && p.getLChip() > 2)
+            if (p.getCurrentRoom() == 20 && p.getLChip() > 2)
             {
                 p.addQPoint(5);
                 return (p.getPlayerName() + " played " + thisImage + " for 5 Quality Points!");
